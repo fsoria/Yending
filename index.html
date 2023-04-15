@@ -12,9 +12,11 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins Regular:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins Regular:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -27,13 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Day
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -58,9 +54,9 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Logo</a></h1>
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <!-- <h1 class="logo"><a href="index.html">Logo</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -99,15 +95,18 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1>YENDING</h1>
-      <h2>La forma mas simple de gestionar tus envíos</h2> 
+      <h1>La forma mas simple de gestionar tus envíos</h1>
+      <h2>¿Querés saber donde esta tu paquete?</h2> 
+ 
       <div class="form-search d-flex align-items-stretch mb-1">
-        
-        <form action="#" class="form-search d-flex align-items-stretch mb-1" data-aos="fade-up" data-aos-delay="200">
-          <input type="text" class="form-control" placeholder="Ingrese su codigo de seguimiento">
-          <button type="submit" class="btn btn-primary">Buscar</button>
+        <div>
+        <form action="#" class="form-control2 d-flex align-items-stretch mb-1" data-aos="fade-up" data-aos-delay="200">
+          <input type="text" class="form-control2" style="border-radius: none;" placeholder="Ingresá tu codigo de seguimiento">
+          <button type="submit" class="btn-primary2">Buscar</button>
         </form>
-        
+      </div>
+  
+
       </div>
     </div>
 </section><!-- End Hero -->
@@ -119,25 +118,23 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <div class="col-lg-6 order-2 order-lg-2" data-aos="fade-left">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content" data-aos="fade-right">
             <h3>Bienvenido/a a un nuevo concepto de envíos</h3>
-            <p class="fst-italic">
-              Trabajamos día a día para ofrecer un servicio de envío rápido, seguro y económico, utilizando nuestra flota de bicicletas de carga equipadas con las mejores tecnologías y sistemas de seguridad
+            <p>Somos una compañía salteña diseñada para solucionar la logística de envíos entre comercios y al consumidor. 
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Poseemos una amplia gama de servicios de envío, desde paquetes pequeños hasta envíos a granel.</li>
-              <li><i class="bi bi-check-circle"></i> Nuestro servicio de envío es rápido, seguro y sostenible gracias a nuestras bicicletas de carga eléctrica, lo que nos permite reducir nuestra huella de carbono y contribuir a la preservación del medio ambiente.</li>
-              <li><i class="bi bi-check-circle"></i> Ademas ofrecemos servicios personalizados para satisfacer las necesidades específicas de cada cliente.</li>
+              <li><i class="bx bx-check-circle"></i>Brindamos un servicio de calidad, eficiente y profesional a través de medios sustentables de movilidad ya que utilizamos bicicletas eléctricas para transportar las mercancías.</li>
+              <li><i class="bx bx-check-circle"></i> Estamos comprometidos con el cuidado del ambiente y el alto nivel de atención al cliente.</li>
+              <li><i class="bx bx-check-circle"></i> Nuestro servicio es sostenible lo que nos permite reducir nuestra huella de carbono.</li>
             </ul>
-            <p>
-              Nuestro servicio de envío es rápido, seguro y sostenible gracias a nuestras bicicletas de carga eléctrica, lo que nos permite reducir nuestra huella de carbono y contribuir a la preservación del medio ambiente.
-            </p>
+        
+              <a class="sobreNosotros" href="#">Saber más</a>
+        
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
@@ -149,25 +146,25 @@
 
           <div class="col-lg-4" data-aos="fade-up">
             <div class="box">
-              <span>01</span>
+              <span></span>
               <h4>Rapido y seguro</h4>
-              <p>Nos aseguramos de que cada envío sea tratado con el mayor cuidado y atención, y que llegue a su destino de manera puntual y sin contratiempos</p>
+              <p>Nos aseguramos de que cada envío sea tratado con el mayor cuidado y atención</p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
             <div class="box">
-              <span>02</span>
-              <h4>Movilidad urbana responsable</h4>
-              <p>Nuestro objetivo es promover y contagiar a otras organizaciones acerca de una forma de envío más respetuosa con el medio ambiente</p>
+              <span></span>
+              <h4>Gestión</h4>
+              <p>¡Despreocupate! Nuestro equipo llevará un seguimiento de envío al igual que tu cliente</p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
-              <span>03</span>
-              <h4>Envios sustantables</h4>
-              <p>Poseemos bicicletas de carga eléctrica, lo que nos permite reducir nuestra huella de carbono y contribuir a la preservación del medio ambiente</p>
+              <span></span>
+              <h4>Reporte de envios</h4>
+              <p>Te enviamos un reporte semanal o mensual para verificar nuestros envíos</p>
             </div>
           </div>
 
@@ -218,35 +215,53 @@
         <div class="section-title">
           <span>Servicios</span>
           <h2>Servicios</h2>
-          <!-- <p>Potenciá y expandí tu negocio utilizando los servicios que tenemos disponibles para vos</p> -->
+          <p>Nuestros envíos se clasifican de acuerdo a las necesidades de tu negocio</p>
         </div>
-
+        <p></p>
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-box"></i></div>
-              <h4><a href="">Tipo de envio 1</a></h4>
-              <p>Entrega de paquetes a domicilio, con una capacidad de carga de hasta 250 kg y una velocidad de entrega más rápida que los vehículos motorizados en zonas urbanas</p>
+              <h4><a href="">30 envíos mensuales</a></h4>
+              <p>Entrega de paquetes a domicilio
+                <p>Podés elegir para cada envio entre las siguientes modalidades: </p>
+                <div >
+                <p><i class="bx bx-check"></i> Envío en el día en menos de 90 minutos</p>
+                <p><i class="bx bx-check"></i> Envío en el dia en un rango horario</p>
+                <p><i class="bx bx-check"></i> Envío en día y rango horario pactado</p>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-box"></i></div>
-              <h4><a href="">Tipo de envio 2</a></h4>
-              <p>Entrega de paquetes a domicilio, con una capacidad de carga de hasta 250 kg y una velocidad de entrega más rápida que los vehículos motorizados en zonas urbanas</p>
+              <h4><a href="">60 envíos mensuales</a></h4>
+              <p>Entrega de paquetes a domicilio
+                <p>Podés elegir para cada envio entre las siguientes modalidades: </p>
+                <div >
+                  <p><i class="bx bx-check"></i> Envío en el día en menos de 90 minutos</p>
+                  <p><i class="bx bx-check"></i> Envío en el dia en un rango horario</p>
+                  <p><i class="bx bx-check"></i> Envío en día y rango horario pactado</p>
+                </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-box"></i></div>
-              <h4><a href="">Tipo de envio 3</a></h4>
-              <p>Entrega de paquetes a domicilio, con una capacidad de carga de hasta 250 kg y una velocidad de entrega más rápida que los vehículos motorizados en zonas urbanas</p>
+              <h4><a href="">90 envíos mensuales</a></h4>
+              <p>Entrega de paquetes a domicilio
+                <p>Podés elegir para cada envio entre las siguientes modalidades: </p>
+                <div >
+                  <p><i class="bx bx-check"></i> Envío en el día en menos de 90 minutos</p>
+                  <p><i class="bx bx-check"></i> Envío en el dia en un rango horario</p>
+                  <p><i class="bx bx-check"></i> Envío en día y rango horario pactado</p>
+                </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-box"></i></div>
               <h4><a href="">Tipo de envio 4</a></h4>
@@ -268,7 +283,7 @@
               <h4><a href="">Tipo de envio 6</a></h4>
               <p>Entrega de paquetes a domicilio, con una capacidad de carga de hasta 250 kg y una velocidad de entrega más rápida que los vehículos motorizados en zonas urbanas</p>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -287,6 +302,9 @@
 
       </div>
     </section><!-- End Cta Section -->
+
+
+    
 
     <!-- ======= Portfolio Section ======= -->
     <!-- <section id="portfolio" class="portfolio">
@@ -546,8 +564,8 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Contacto</span>
-          <h2>Contacto</h2>
+          <span>Contactános</span>
+          <h2>Contactános</h2>
           <!-- <p>Hacé tu consulta</p> -->
 
         </div>
@@ -557,7 +575,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Nuestra direccion</h3>
-              <p>Direccion Yending. Salta - Argentina</p>
+              <p>12 de Octubre 2099 - Salta, Argentina</p>
             </div>
           </div>
 
@@ -565,15 +583,15 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Nuestro email</h3>
-              <p>yending@yending.com</p>
+              <p>info@yending.com.ar</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
-              <h3>Contactános</h3>
-              <p>387 11111111</p>
+              <h3>Nuestro teléfono</h3>
+              <p>+54 3874048429</p>
             </div>
           </div>
 
@@ -582,7 +600,7 @@
         <div class="row" data-aos="fade-up">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14125.217925791972!2d-65.414879!3d-24.790926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x72a076d2a2848c99!2sSalta!5e0!3m2!1sen!2sar!4v1646887731576!5m2!1sen!2sar" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           
           </div>
 
@@ -628,22 +646,22 @@
             <div class="footer-info">
               <h3>YENDING</h3>
               <p>
-                Direccion Yending - Salta, Argentina<br><br>
-                <strong>Contacto</strong> 387 1111111<br>
-                <strong>Email:</strong> yending@yending.com<br>
+                12 de Octubre 2099 - Salta, Argentina<br><br>
+                <strong>Contacto: </strong>+54 3874048429<br>
+                <strong>Email: </strong> info@yending.com.ar<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.instagram.com/yending.salta/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                <a href="https://www.linkedin.com/company/yending/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <!-- <h4>Yending</h4> -->
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Quienes somos</a></li>
@@ -654,7 +672,7 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Nuestros servicios</h4>
+            <!-- <h4>Servicios</h4> -->
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Servicio 1</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Servicio 2</a></li>
@@ -665,7 +683,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Nuestro Newsletter</h4>
+            <h4>Newsletter</h4>
             <p>Subscribite y no te pierdas ninguna novedad</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribirme">
