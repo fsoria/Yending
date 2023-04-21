@@ -12,6 +12,12 @@ a {
   text-decoration: none;
 }
 
+a-servicio{
+  padding-top: 5px !important;
+  color:#0c0c0c !important
+
+}
+
 sobreNosotros{
   font-family: "Poppins Regular", sans-serif;
   text-transform: uppercase;
@@ -228,12 +234,15 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 47px;
+  filter: drop-shadow(3px 2px 2px rgba(147, 140, 140, 0.851));
 }
 
 .scrolled-offset {
   margin-top: 70px;
 }
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -340,6 +349,12 @@ h6 {
   visibility: visible;
 }
 
+.img-fluid-service {
+  width: 650px;
+  height: 500px !important;
+  margin-left: 350px;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -348,6 +363,13 @@ h6 {
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
+
+  .imgAbout {
+    padding-top: 15px;
+  }
+
+ 
+
 }
 
 /**
@@ -471,6 +493,7 @@ h6 {
   position: relative;
 }
 
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.5);
@@ -564,6 +587,11 @@ section {
   padding: 30px 0;
   position: relative;
 }
+.section-title-inner {
+  text-align: center;
+  padding: 0px 0;
+  position: relative;
+}
 
 .section-title h2 {
   font-size: 32px;
@@ -651,6 +679,8 @@ section {
   background-color: #049c5c;
   color: #fff
 }
+
+
 
 /*--------------------------------------------------------------
 # Why Us
@@ -788,6 +818,7 @@ section {
   background: #049c5c;
   border-color: #049c5c;
   padding: 70px 20px 90px 20px;
+  cursor: pointer
 }
 
 .services .icon-box:hover .icon {
@@ -806,6 +837,32 @@ section {
 .services .icon-box:hover p {
   color: #fff;
 }
+
+.services .ss-btn{
+  font-family: "Poppins Regular", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: #444444;
+}
+
+.services .ss-btn:hover{
+  font-family: "Poppins Regular", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: underline;
+}
+
 
 /*--------------------------------------------------------------
 # Cta
@@ -953,6 +1010,8 @@ section {
   bottom: 20px;
 }
 
+.portfolio 
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1004,9 +1063,6 @@ section {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
@@ -1015,7 +1071,7 @@ section {
 }
 
 .portfolio-details .portfolio-description p {
-  padding: 0;
+  padding: 0px;
 }
 
 /*--------------------------------------------------------------
@@ -1316,7 +1372,10 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #efefef;
+  background: url("../img/hero-bg.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .breadcrumbs h2 {
@@ -1499,8 +1558,64 @@ section {
   color: #e82d2d;
 }
 
+#footer .logo2 img {
+  max-height: 55px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
 }
+
+
+/*---------------------------------------------------------*/
+
+.quienes-somos-titulo{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important ;
+  height: 38vh;
+}
+
+.quienes-somos{
+  padding-top: 17px;
+}
+
+.text-primary {
+  color: #049c5c !important;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: #229364;
+  background-size: cover !important;
+  margin-top: -70px !important;
+}
+
+.header-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: white;
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: #229364;
+  background-size: cover !important;
+  margin-top: 25px !important;
+}
+
+
+
+
+
