@@ -578,8 +578,23 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
+}
+
+section2 {
+  overflow: hidden;
+}
+
+.linea {
+  content: "";
+  width: 90px;
+  height: 3px;
+  background-color: #049c5c;
+  position: absolute;
+  left: 50%;
+  margin-left: -32px;
+  bottom: -25px;
 }
 
 .section-title {
@@ -699,7 +714,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #ed5b5b;
+  color: #049c5c;
 }
 
 .why-us .box h4 {
@@ -718,15 +733,30 @@ section {
 }
 
 .why-us .box:hover {
-  background: #049c5c;
+  background: #ffffff;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
-}
+  /* border: solid #191919; */
+  /* border-style: inset; */
+} 
 
 .why-us .box:hover span,
 .why-us .box:hover h4,
 .why-us .box:hover p {
-  color: #fff;
+  color: #0a0a0a;
+}
+
+@media(max-width: 768px){
+  .why-us .box{
+    padding: 0; 
+    box-shadow: 0px 0px 0px rgba(250, 250, 250, 0.1)
+  }
+  .why-us .box:hover{
+    background: #ffffff;
+  }
+  .img-fluid{
+    margin-top: 40px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -765,6 +795,16 @@ section {
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.services .icon-box2 {
+  text-align: center;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background-color: grey;
+  width: 100%;
 }
 
 .services .icon-box .icon {
@@ -806,6 +846,7 @@ section {
 .services .icon-box h4 a {
   color: #191919;
 }
+
 
 .services .icon-box p {
   line-height: 24px;
@@ -929,7 +970,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #e82d2d;
+  color: #6c6363;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1002,7 +1043,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-links a:hover {
-  color: #e82d2d;
+  color: #6e5b5b;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
@@ -1016,7 +1057,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1158,7 +1199,7 @@ section {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #e82d2d;
+  background: #635e5e;
 }
 
 .pricing .featured {
@@ -1354,7 +1395,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #e82d2d;
+  background: #049c5c;
 }
 
 @keyframes animate-loading {
@@ -1376,6 +1417,20 @@ section {
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.breadcrumbs-services {
+  background: url("../img/about222.jpg");
+  height: 200px;
+
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .breadcrumbs h2 {
@@ -1482,7 +1537,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ed5b5b;
+  color: #049c5c;
   font-size: 18px;
   line-height: 1;
 }
@@ -1505,7 +1560,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #eb4444;
+  color: #049c5c;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1538,7 +1593,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #e82d2d;
+  background: #049c5c;
 }
 
 #footer .copyright {
@@ -1555,7 +1610,7 @@ section {
 }
 
 #footer .credits a {
-  color: #e82d2d;
+  color: #13b1cd
 }
 
 #footer .logo2 img {
@@ -1580,6 +1635,12 @@ section {
   height: 38vh;
 }
 
+@media (max-width: 768px){
+  .quienes-somos-titulo{
+    margin-left: 30px;
+  }
+}
+
 .quienes-somos{
   padding-top: 17px;
 }
@@ -1592,10 +1653,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 25vh;
   background-color: #229364;
   background-size: cover !important;
-  margin-top: -70px !important;
+  margin-top: 0px !important;
 }
 
 .header-title {
@@ -1609,10 +1670,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 25vh;
   background-color: #229364;
   background-size: cover !important;
-  margin-top: 25px !important;
+  margin-top: 55px !important;
 }
 
 
