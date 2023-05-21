@@ -5,7 +5,7 @@ function Message() {
   return (
     // Contenido del componente Message
     <div>
-      <h1>Message Component</h1>
+ 
     </div>
   );
 }

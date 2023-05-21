@@ -2,18 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function Login() {
-
-    const handleLogin = () => {
-        window.location.href = 'https://yending.lightdata.app/';
-      };
+  const handleLogin = () => {
+    window.location.href = 'https://yending.lightdata.app/';
+  };
 
   return (
-
-    <div>
-      <h1>Login Component</h1>
-    </div>
+    <li>
+      <a className="nav-link scrollto" onClick={handleLogin} style={{ cursor: 'pointer' }}>Ingresar</a>
+    </li>
   );
 }
+
 
 export default Login
 
