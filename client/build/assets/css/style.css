@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #00422e;
+  color: #096956;
   text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a-servicio{
 
 }
 
-sobreNosotros{
+/* .sobreNosotros {
   font-family: "Poppins Regular", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -30,11 +30,11 @@ sobreNosotros{
   margin-top: 10px;
   border: 2px solid #fff;
   color: #fff;
+} */
 
-}
 
 a:hover {
-  color: #00422e;
+  color: #079f81;
   text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #00422e;
+  background: #079f81;
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -75,7 +75,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #00422e;
+  background: #079f81;
   color: #fff;
 }
 
@@ -99,12 +99,13 @@ h6 {
   border: none;
   height: 40px;
   width: 500px;
+  margin-left: -20px
 }
 
 .btn-primary2{
   border-radius: 1px !important;
   border: none;
-  background-color: #00422e;
+  background-color: #096956;
   box-shadow: #4c4c4c;
   font-family:'Poppins', sans-serif;
   color:white;
@@ -112,7 +113,7 @@ h6 {
 }
 
 .btn-primary2:hover{
-  background: #27d08a;
+  background: rgba(253,199,75,255);
 }
 
 
@@ -135,7 +136,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #00422e;
+  border: 6px solid #096956;
   border-top-color: #efefef;
   border-radius: 50%;
   width: 60px;
@@ -184,7 +185,7 @@ h6 {
 }
 
 #topbar .contact-info i {
-  color: #00422e;
+  color: #096956;
   line-height: 0;
   margin-right: 5px;
 }
@@ -209,14 +210,14 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #00422e;
+  /* background: #096956; */
   transition: all 0.5s;
   z-index: 997;
   height: 70px;
 }
 
 #header.fixed-top {
-  background: #00422e;
+  background: #096956;
 }
 
 #header .logo {
@@ -295,6 +296,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
   background: #032a1d;
+  color: rgba(253,199,75,255);
 }
 
 .navbar .dropdown ul {
@@ -354,6 +356,7 @@ h6 {
   width: 650px;
   height: 500px !important;
   margin-left: 350px;
+  
 }
 
 @media (max-width: 1366px) {
@@ -367,6 +370,7 @@ h6 {
 
   .imgAbout {
     padding-top: 15px;
+
   }
 
  
@@ -386,7 +390,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #00422e;
+  color: #096956;
 }
 
 @media (max-width: 991px) {
@@ -440,7 +444,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #00422e;
+  color: #096956;
   background: none;
 }
 
@@ -476,7 +480,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #00422e;
+  color: #096956;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -489,20 +493,23 @@ h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 110px);
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
+  background: url("../img/hero-bg.jpg") top center no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  background-position-y: -330px;
   position: relative;
 }
 
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+
 }
 
 #hero h1 {
@@ -511,7 +518,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: #fff;
+  color:#f3f5f4
 }
 
 #hero h2 {
@@ -534,19 +541,28 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #00422e;
-  border-color: #00422e;
+  background: #096956;
+  border-color: #096956;
 }
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+ 
+  }
+}
+
+@media (min-width: 1100px) {
+  #hero {
+    background-attachment: fixed;
+ 
   }
 }
 
 @media (max-width: 768px) {
   #hero {
     text-align: center;
+
   }
 
   #hero .container {
@@ -554,6 +570,7 @@ h6 {
   }
 
   #hero h1 {
+    color: #0c0c0c;
     font-size: 28px;
     line-height: 36px;
   }
@@ -562,6 +579,7 @@ h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    color: #0c0c0c;
   }
 
   #hero .form-control2{
@@ -571,7 +589,10 @@ h6 {
     width: 350px;
     margin-left: 15px;
   }
-  
+  #hero:before{
+  background: url("../img/hero-bg.jpg") top center no-repeat;
+  background-size: cover;
+  }
 
 }
 
@@ -591,7 +612,7 @@ section2 {
   content: "";
   width: 90px;
   height: 3px;
-  background-color: #00422e;
+  background-color: #fdc727;
   position: absolute;
   left: 50%;
   margin-left: -32px;
@@ -623,7 +644,7 @@ section2 {
 .section-title span {
   position: absolute;
   top: 30px;
-  color: #f4f4f4;
+  color: #dfdfdf;
   left: 0;
   right: 0;
   z-index: 1;
@@ -637,6 +658,8 @@ section2 {
   margin-bottom: 0;
   position: relative;
   z-index: 2;
+  color: black;
+  font-size: 20px;
 }
 
 @media (max-width: 575px) {
@@ -655,22 +678,38 @@ section2 {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 23px;
+  /* padding-top: 80px; */
+  margin-right: 50px;
+  color: white;
+  background-color: #096956;
+  border-radius: 0 10px 10px 10px ;
+  padding: 15px;
+  margin-top: 40px;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  font-size: 17px;
+  margin-right: 50px;
 }
 
 .about .content ul li {
   padding-bottom: 10px;
+  margin-right: 50px;
+  padding: 15px;
+}
+
+.about .content p {
+  padding-bottom: 10px;
+  margin-right: 50px;
 }
 
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #00422e;
+  color: #096956;
 }
 
 .about .content p:last-child {
@@ -680,19 +719,26 @@ section2 {
 .sobreNosotros {
   text-decoration: none;
   font-family: "Poppins Regular", sans-serif;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
   padding: 10px 28px;
   transition: 0.5s;
   margin-top: 10px;
   border: 2px solid #a9a8a8 !important;;
-  color: #06824e;
-  border-radius: 3px;
+  background-color: #096956;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin-left: 180px; /* Centrar horizontalmente */
 }
 
+
 .sobreNosotros:hover{
-  background-color: #00422e;
+  background-color: #096956;
   color: #fff
 }
 
@@ -702,20 +748,24 @@ section2 {
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .why-us .box {
   padding: 50px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
   transition: all ease-in-out 0.3s;
+  background-color: #fdc727c4;
+  border-radius: 0 20px 20px 20px;
+  backdrop-filter: blur(10px);
+
 }
 
 .why-us .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #00422e;
+  color: #096956
 }
 
 .why-us .box h4 {
@@ -723,21 +773,23 @@ section2 {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #191919;
+  color: #096956
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color:#096956;
   font-size: 15px;
   margin: 0;
   padding: 0;
+  
 }
 
 .why-us .box:hover {
   background: #ffffff;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
-  /* border: solid #191919; */
+  backdrop-filter: blur(10px) !important;
+  /* border: solid #096956; */
   /* border-style: inset; */
 } 
 
@@ -749,14 +801,18 @@ section2 {
 
 @media(max-width: 768px){
   .why-us .box{
-    padding: 0; 
+    padding: 10px; 
     box-shadow: 0px 0px 0px rgba(250, 250, 250, 0.1)
   }
   .why-us .box:hover{
     background: #ffffff;
   }
   .img-fluid{
-    margin-top: 40px;
+    margin-top: 30px;
+
+  }
+  .img-fluid-logo{
+    margin-top: 30px;
   }
 }
 
@@ -764,14 +820,14 @@ section2 {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #f2f2f2;
+  background: #096956;
   padding: 15px 0;
   text-align: center;
 }
 
 .clients img {
   width: 50%;
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
@@ -781,6 +837,30 @@ section2 {
   filter: none;
   transform: scale(1.2);
 }
+
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+  animation: slide-animation 20s linear infinite;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+@keyframes slide-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 @media (max-width: 768px) {
   .clients img {
@@ -795,24 +875,19 @@ section2 {
   text-align: center;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(242, 6, 6, 0.1);
+  background: white;
+  border: solid #096956; 
+  border-radius: 0 15px 15px 20px;
+  
 }
 
-
-.services .icon-box2 {
-  text-align: center;
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  background-color: grey;
-  width: 100%;
-}
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #00422e;
+  width:10px;
+  height: 10px;
+  background-color: #096956;
   transition: all 0.3s ease-out 0s;
   display: flex;
   align-items: center;
@@ -821,9 +896,11 @@ section2 {
   transform-style: preserve-3d;
 }
 
-.services .icon-box .icon i {
-  color: #fff;
+.services .icon-box .icon img {
   font-size: 28x;
+  width:130px;
+  height: 130px;
+  padding: 20px;
 }
 
 .services .icon-box .icon::before {
@@ -833,32 +910,35 @@ section2 {
   top: -8px;
   height: 100%;
   width: 100%;
-  background: #fce5e5;
+  background: rgba(253,199,75,255);
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
+  color:black
 }
 
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+  color: #090909;
+  padding: 40px;
 }
 
 .services .icon-box h4 a {
-  color: #191919;
+  color: #0c0c0c;
 }
 
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 0;
+  color:black
   
 }
 
 .services .icon-box:hover {
-  background: #00422e;
-  border-color: #00422e;
+  background-color: #fff;;
   padding: 70px 20px 90px 20px;
   cursor: pointer
 }
@@ -868,41 +948,50 @@ section2 {
 }
 
 .services .icon-box:hover .icon i {
-  color: #00422e;
+  color: #096956;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #00422e;
+  background: #096956;
 }
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
-  color: #fff;
+  color: #090909;
 }
 
 .services .ss-btn{
   font-family: "Poppins Regular", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: bold 14px !important;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  color: #444444;
+  background-color: #fdc727c4;
 }
 
 .services .ss-btn:hover{
   font-family: "Poppins Regular", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  color: #fff;
-  text-decoration: underline;
+  color: #096956;
+}
+
+.header-envio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  background-color: #fdc727c4 ;
+  background-size: cover !important;
+  margin-top: 0px !important;
 }
 
 
@@ -910,19 +999,46 @@ section2 {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
+  height: 350px;
+}
+
+
+.cta-express {
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-express.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+  height: 440px;
+}
+
+.cta-day{
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-day.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+  height: 440px;
+  background-position-x: 10px;
+}
+
+.cta-pactado {
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-pactado.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+  height: 440px;
 }
 
 .cta h3 {
-  color: #fff;
+  font-weight: bold;
+  color: #096956;
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  color: #096956;
 }
 
 .cta .cta-btn {
@@ -935,13 +1051,14 @@ section2 {
   padding: 10px 28px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #096956;
+  color: white;
+  background-color: #096956;
 }
 
 .cta .cta-btn:hover {
-  background: #00422e;
-  border: 2px solid #00422e;
+  background: rgba(253,199,75,255);
+  border: 2px solid rgba(253,199,75,255);
 }
 
 /*--------------------------------------------------------------
@@ -953,6 +1070,7 @@ section2 {
   list-style: none;
   text-align: center;
   border-radius: 50px;
+
 }
 
 .portfolio #portfolio-flters li {
@@ -1018,7 +1136,7 @@ section2 {
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #00422e;
+  color: #096956;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -1062,12 +1180,14 @@ section2 {
 }
 
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 50%;
+  margin-left: 150px;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  margin-left: -70px;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
@@ -1075,11 +1195,12 @@ section2 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #00422e;
+  border: 1px solid #096956;
+  
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #00422e;
+  background-color: #096956;
 }
 
 .portfolio-details .portfolio-info {
@@ -1121,7 +1242,7 @@ section2 {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #f9f9f9;
+  background: #fdc7279a;;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -1134,12 +1255,12 @@ section2 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #191919;
+  color: #0f4434;
 }
 
 .pricing .box h4 {
   font-size: 42px;
-  color: #00422e;
+  color: #096956;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
@@ -1152,7 +1273,7 @@ section2 {
 }
 
 .pricing .box h4 span {
-  color: #bababa;
+  color: #096956;
   font-size: 16px;
   font-weight: 300;
 }
@@ -1160,7 +1281,7 @@ section2 {
 .pricing .box ul {
   padding: 0;
   list-style: none;
-  color: #191919;
+  color: #0f4434;
   text-align: center;
   line-height: 20px;
   font-size: 14px;
@@ -1171,13 +1292,13 @@ section2 {
 }
 
 .pricing .box ul i {
-  color: #00422e;
+  color: #096956;
   font-size: 18px;
   padding-right: 4px;
 }
 
 .pricing .box ul .na {
-  color: #ccc;
+  color:#096956;
   text-decoration: line-through;
 }
 
@@ -1187,10 +1308,10 @@ section2 {
 }
 
 .pricing .box .btn-buy {
-  background: #00422e;
+  background: #fdc727;;
   display: inline-block;
   padding: 10px 40px;
-  color: #fff;
+  color: #096956;
   transition: none;
   font-size: 14px;
   font-weight: 400;
@@ -1200,13 +1321,14 @@ section2 {
 }
 
 .pricing .box .btn-buy:hover {
-  background: #635e5e;
+  background: #fff;
+  font-size: 16px;
 }
 
 .pricing .featured {
-  background: #00422e;
+  background: #fdc727;
   box-shadow: none;
-  color: #fff;
+  color: #0f4434;
 }
 
 .pricing .featured h3,
@@ -1214,11 +1336,11 @@ section2 {
 .pricing .featured ul,
 .pricing .featured ul li,
 .pricing .featured ul .na {
-  color: #fff;
+  color: #0f4434;
 }
 
 .pricing .featured h4 span {
-  color: rgba(255, 255, 255, 0.58);
+  color: #096956;
 }
 
 .pricing .featured .btn-wrap {
@@ -1232,7 +1354,7 @@ section2 {
 
 .pricing .featured .btn-buy:hover {
   background: #fff;
-  color: #00422e;
+  color: #096956;
 }
 
 /*--------------------------------------------------------------
@@ -1281,7 +1403,7 @@ section2 {
 }
 
 .team .member .social a:hover {
-  color: #00422e;
+  color: #096956;
 }
 
 .team .member .social i {
@@ -1293,18 +1415,22 @@ section2 {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+  font-weight: bolder;
+  color: #096956 !important;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
+
 }
 
 .contact .info-box i {
   font-size: 32px;
-  color: #00422e;
+  background-color: #096956; 
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f5a0a0;
+  /* border: 2px dotted #d2f5a0; */
+  color: #fee500;
+  margin-bottom: 20px;
 }
 
 .contact .info-box h3 {
@@ -1312,18 +1438,30 @@ section2 {
   color: #777777;
   font-weight: 700;
   margin: 10px 0;
+
 }
 
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
+.larger-container {
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  width: 70%; /* Ajusta el ancho según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 10px #096956;
   padding: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact .php-email-form .error-message {
@@ -1376,7 +1514,7 @@ section2 {
 
 .contact .php-email-form input::focus,
 .contact .php-email-form textarea::focus {
-  background-color: #00422e;
+  background-color: #096956;
 }
 
 .contact .php-email-form input {
@@ -1388,7 +1526,7 @@ section2 {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #00422e;
+  background: #096956;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1396,7 +1534,7 @@ section2 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #00422e;
+  background: rgba(253,199,75,255);
 }
 
 @keyframes animate-loading {
@@ -1418,6 +1556,15 @@ section2 {
   height: 500px;
   background-repeat: no-repeat;
   background-size: 150%;
+}
+
+.breadcrumbs-quienes-somos {
+  padding: 15px 0;
+  background: url("../img/hero-bg2.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -280px;
 }
 
 .breadcrumbs-services {
@@ -1463,7 +1610,7 @@ section2 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #0c0c0c;
+  background: #096956;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1475,11 +1622,8 @@ section2 {
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #191919;
   color: #fff;
-  border-top: 4px solid #00422e;
   text-align: center;
-  padding: 30px 20px;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1513,7 +1657,7 @@ section2 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #00422e;
+  background: rgba(253,199,75,255);
   color: #fff;
   text-decoration: none;
 }
@@ -1538,7 +1682,7 @@ section2 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #00422e;
+  color: #096956;
   font-size: 18px;
   line-height: 1;
 }
@@ -1561,7 +1705,7 @@ section2 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #00422e;
+  color: rgba(253,199,75,255);
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1583,18 +1727,18 @@ section2 {
   top: 0;
   right: 0;
   bottom: 0;
-  border: 0;
+  border: 70;
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #00422e;
+  background: #096956;
   color: #fff;
   transition: 0.3s;
   border-radius: 4;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #00422e;
+  background: rgba(253,199,75,255);
 }
 
 #footer .copyright {
@@ -1615,7 +1759,7 @@ section2 {
 }
 
 #footer .logo2 img {
-  max-height: 55px;
+  max-height: 80px;
   margin-bottom: 20px;
 }
 
@@ -1644,10 +1788,14 @@ section2 {
 
 .quienes-somos{
   padding-top: 17px;
+  text-align: justify;
+  width: 450px;
+  margin-right: 250px !important;
+
 }
 
 .text-primary {
-  color: #00422e !important;
+  color: #096956 !important;
 }
 
 .header {
@@ -1655,7 +1803,7 @@ section2 {
   justify-content: center;
   align-items: center;
   height: 25vh;
-  background-color: #00422e;
+  background-color: #096956;
   background-size: cover !important;
   margin-top: 0px !important;
 }
@@ -1664,7 +1812,7 @@ section2 {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  color: white;
+  color: #fdc727;
 }
 
 .header2 {
@@ -1672,10 +1820,12 @@ section2 {
   justify-content: center;
   align-items: center;
   height: 25vh;
-  background-color: #00422e;
+  background-color: #096956;
   background-size: cover !important;
   margin-top: 55px !important;
 }
+
+
 
 
 
