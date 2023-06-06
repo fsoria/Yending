@@ -11,19 +11,32 @@ import reportWebVitals from './reportWebVitals';
 
 
 const rootElements = {
-  root: ReactDOM.createRoot(document.getElementById('root')),
-  rootMessage: ReactDOM.createRoot(document.getElementById('rootMessage')),
-  rootLogin: ReactDOM.createRoot(document.getElementById('rootLogin')),
-  rootSubscribe: ReactDOM.createRoot(document.getElementById('rootSubscribe')),
-  rootTracking: ReactDOM.createRoot(document.getElementById('rootTracking')),
+  root: document.getElementById('root'),
+  rootMessage: document.getElementById('rootMessage'),
+  rootLogin: document.getElementById('rootLogin'),
+  rootSubscribe: document.getElementById('rootSubscribe'),
+  rootTracking: document.getElementById('rootTracking'),
 };
 
+if (rootElements.root) {
+  ReactDOM.createRoot(rootElements.root).render(<App />);
+}
 
-rootElements.root.render(<App />);
-rootElements.rootMessage.render(<Message />);
-rootElements.rootLogin.render(<Login />);
-rootElements.rootSubscribe.render(<Subscribe />);
-rootElements.rootTracking.render(<Tracking />);
+if (rootElements.rootMessage) {
+  ReactDOM.createRoot(rootElements.rootMessage).render(<Message />);
+}
+
+if (rootElements.rootLogin) {
+  ReactDOM.createRoot(rootElements.rootLogin).render(<Login />);
+}
+
+if (rootElements.rootSubscribe) {
+  ReactDOM.createRoot(rootElements.rootSubscribe).render(<Subscribe />);
+}
+
+if (rootElements.rootTracking) {
+  ReactDOM.createRoot(rootElements.rootTracking).render(<Tracking />);
+}
 
 
 

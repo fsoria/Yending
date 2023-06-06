@@ -24,7 +24,7 @@
   <link href="./public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="./public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="./public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-...">
   <!-- Template Main CSS File -->
   <link href="./public/assets/css/style.css" rel="stylesheet">
 
@@ -35,6 +35,9 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
+    <a href="https://wa.me/3874048429?text=Hola%2C%20estoy%20interesado/a%20en%20conocer%20más%20sobre%20los%20servicios%20de%20Yending.%20¿Pueden%20brindarme%20más%20información%3F" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo"><img src="./public/assets/img/logo.png" alt="" class="img-fluid"></a>
@@ -43,19 +46,18 @@
         <ul>
           <li><a class="nav-link scrollto " href="index.html">Inicio</a></li>
           <li><a class="nav-link scrollto active" href="#about">Quiénes somos</a></li>
-            <li class="dropdown"><a class="nav-link scrollto"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                  <li><a href="services-express.html">Envíos express</a></li>
-                  <li><a href="services-day.html">Envíos en el día</a></li>
-                  <li><a href="services-pactado.html">Envíos pactados</a></li>
-                </ul>
-              </li>
+          <li class="dropdown"><a class="nav-link scrollto" ><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="services-express.html">Menos de 90 mins</a></li>
+              <li><a href="services-day.html">En el día</a></li>
+              <li><a href="services-pactado.html">Entrega pactada</a></li>
+              </ul>
+            </li>
               <li><a class="nav-link scrollto" href="contact.html">Contacto</a></li>
               <div id="rootLogin">
-                <li><a class="nav-link scrollto">Ingresar</a></li>
-            </div>
-          </ul> 
-            </ul>
+              <li><a class="nav-link scrollto" onclick="window.location.href='https://yending.lightdata.app/'">Ingresar</a></li>
+              </div>
+        </ul> 
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
     </div>
@@ -78,15 +80,13 @@
 
     <!-- ======= Portfolio Details Section ======= -->
       <div class="quienes-somos-titulo">
-        <h2 class="h2-quienes-somos-titulo">PARA TRANSPORTE LOGISTICO SOLUCIONES <span class="text-primary">BICI</span>BLES</h2>
-        <h2>PARA EL CAMBIO CLIMATICO <span class="text-primary"> TAMBIEN </span></h2>
+        <h2 class="h2-quienes-somos-titulo">PARA TRANSPORTE LOGÍSTICO SOLUCIONES <span class="text-primary">BICI</span>BLES</h2>
+        <h2 class="h2-quienes-somos-titulo">PARA EL CAMBIO CLIMÁTICO <span class="text-primary"> TAMBIÉN </span></h2>
       </div>
 
       <header class="header">
         <h1 class="header-title">Quiénes somos</h1>
       </header>
-    <section id="portfolio-details" class="portfolio-details">
-
 
       <section id="portfolio-details" class="portfolio-details">
         <div class="container">
@@ -98,15 +98,15 @@
                 <div class="swiper-wrapper align-items-center">
   
                   <div class="swiper-slide" >
-                    <img src="./public/assets/img/hero-bg3.jpg" alt="" >
+                    <img class="imgQuienes" src="./public/assets/img/hero-bg3.jpg" alt="" >
                   </div>
   
                   <div class="swiper-slide">
-                    <img src="./public/assets/img/hero-bg4.jpg" alt="">
+                    <img class="imgQuienes" src="./public/assets/img/hero-bg4.jpg" alt="">
                   </div>
   
                   <div class="swiper-slide">
-                    <img src="./public/assets/img/hero-bg5.jpg" alt="">
+                    <img class="imgQuienes" src="./public/assets/img/hero-bg5.jpg" alt="">
                   </div>
   
                 </div>
@@ -189,46 +189,6 @@
     
           </div>
         </section>
-
-        <header class="header2">
-          <h1 class="header-title">Nuestros clientes</h1>
-        </header>
-
-        <h4 style="color: grey; padding-top: 50px !important; font-size: 20px; margin-left: 20px;">Algunos de los clientes que confían en nosotros/as</h4>
-
-        <!-- ======= Clients Section ======= -->
-        <section id="clients"; class="clients"; style="background-color:#ffff">
-          <div class="container"; data-aos="zoom-in">
-        
-            <div class="row d-flex align-items-center justify-content-center">
-              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-                <img src="./public/assets/img/clients/client-1.png" class="img-fluid"; style="max-height: 100px;" alt="">
-              </div>
-        
-              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-                <img src="./public/assets/img/clients/client-2.png" class="img-fluid" alt="">
-              </div>
-        
-              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-                <img src="./public/assets/img/clients/client-3.png" class="img-fluid" alt="">
-              </div>
-        
-              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-                <img src="./public/assets/img/clients/client-4.png" class="img-fluid" alt="">
-              </div>
-        
-              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-                <img src="./public/assets/img/clients/client-5.png" class="img-fluid" alt="">
-              </div>
-        
-              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-                <img src="./public/assets/img/clients/client-6.png" class="img-fluid" alt="">
-              </div>
-        
-            </div>
-        
-          </div>
-        </section><!-- End Clients Section -->
         
   </main><!-- End #main -->
 
@@ -273,9 +233,9 @@
             <!-- <h4>Servicios</h4> -->
             <ul>
               <li><span>Servicios</span></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-express.html">Envíos express</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-day.html">Envíos en el día</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-pactado.html">Envíos pactados</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-express.html">Menos de 90 minutos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-day.html">En el día</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-pactado.html">Entrega pactada</a></li>
             </ul>
           </div>
 

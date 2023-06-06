@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Servicios</title>
+  <title>Entrega pactada</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,7 +25,7 @@
   <link href="./public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="./public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="./public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-...">
   <!-- Template Main CSS File -->
   <link href="./public/assets/css/style.css" rel="stylesheet">
 
@@ -35,6 +35,10 @@
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
+    <a href="https://wa.me/3874048429?text=Hola%2C%20estoy%20interesado/a%20en%20conocer%20más%20sobre%20los%20servicios%20de%20Yending.%20¿Pueden%20brindarme%20más%20información%3F" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo"><img src="./public/assets/img/logo.png" alt="" class="img-fluid"></a>
@@ -48,14 +52,14 @@
             <li class="dropdown"><a class="nav-link scrollto active"  href="#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                   </li>
-                  <li><a href="services-express">Envíos express</a></li>
-                  <li><a href="services-day.html">Envíos en el día</a></li>
-                  <li><a href="services-pactado.html">Envíos pactados</a></li>
+                  <li><a href="services-express">Menos de 90 mins</a></li>
+                  <li><a href="services-day.html">En el día</a></li>
+                  <li><a href="services-pactado.html">Entrega pactada</a></li>
                 </ul>
               </li>
               <li><a class="nav-link scrollto" href="contact.html">Contacto</a></li>
               <div id="rootLogin">
-                <li><a class="nav-link scrollto">Ingresar</a></li>
+                <li><a class="nav-link scrollto" onclick="window.location.href='https://yending.lightdata.app/'">Ingresar</a></li>
             </div>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -69,10 +73,11 @@
     <!-- ======= Cta Section ======= -->
     <section id="cta-pactado" class="cta-pactado">
       <div class="container" data-aos="zoom-in">
-        <div class="text-center">
-          <h3 style="font-size: 40px;color: black;">ENVÍOS CON ENTREGA PACTADA</h3>
-          <p style="font-size: 27px;color: black; font-weight: bold;"> Ofrecé envíos con fecha y hora programada</p>
-          <!-- <a class="cta-btn" href="#">Saber más</a> -->
+        <div class="text-primary">
+          <!-- <h3 style="font-weight: bold; font-size: 40px;color: white;">ENTREGA</h3>
+          <h3 style="font-weight: bold; font-size: 40px;color: white">PACTADA</h3>
+          <p  style="font-size: 27px;color: white; font-weight: bold; margin-bottom: 0px !important;"> Ofrecé envíos con</p>
+          <p  style="font-size: 27px;color: white; font-weight: bold; "> fecha y hora programada</p> -->
         </div>
       </div>
     </section><!-- End Cta Section -->
@@ -88,24 +93,24 @@
 
 
     <!-- ======= Service express Details Section ======= -->
+
     <section id="portfolio-details" class="portfolio-details">
       <div class="container" style="margin-top: 30px;">
         <div class="row gy-4">
           <div class="col-lg-4">
-            <div class="portfolio-description " style=" width: 400px !important; margin-left: 100px;">
-              <h2 class="h2-pactado">ENVÍOS CON ENTREGA PACTADA</h2>
-              <p class="p-portfolio-pactado">
-                Permite programar tus entregas con anticipación y coordinar con tus clientes de manera eficiente. Este servicio te permite fijar una fecha y un rango horario específico para la entrega, lo que te brinda una mayor flexibilidad en la planificación de tus actividades diarias y te ayuda a evitar retrasos o problemas de comunicación con tus clientes.
+            <div class="portfolio-description ">
+              <h2 style="width: 280px;">ENTREGA PACTADA</h2>
+              <p style="width: 500px;">
+                Permite programar tus entregas con anticipación y coordinar con tus clientes de manera eficiente. Este servicio te permite fijar una fecha y un rango horario específico para la entrega, lo que te brinda una mayor flexibilidad en la planificación de tus actividades diarias y te ayuda a evitar retrasos o problemas de comunicación con tus clientes. 
               </p>
             </div>
-          </div>
-
+            </div>
           <div class="col-lg-8"> 
            <div    >
-              <div class="swiper-wrapper align-items-center" style="width: 50px !important";> 
-                <div class="swiper-slide" style="  height: 500px;">
+              <div class="swiper-wrapper align-items-center";> 
+                <div class="imgServices-Swiper" style="width: 600px !important; margin-left: 100px;">
                   <div>
-                  <img style="height: 400px !important; width: 600px !important; margin-left: 170px; border-radius: 0 20px 20px 20px;" src="./public/assets/img/about.jpg" alt="">
+                  <img class="imgServices" src="./public/assets/img/cta-pactado2.jpg" alt="">
                 </div>
                 </div>
              </div>
@@ -113,7 +118,7 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </section><!-- End Service express Details Section -->
   </main><!-- End #main -->
 
@@ -135,8 +140,8 @@
               <div class="icon">
                 <img src="././public/assets/img/bicicleta.gif" alt="Imagen" />
               </div>
-              <h4><a href="services-express.html">Envíos express</a></h4>
-              <p>Servicio de envío express de menos de 90 minutos de duración. Ideal para cuando necesitas hacer entregas urgentes de forma rápida</p>
+              <h4><a href="services-express.html">Menos de 90 minutos</a></h4>
+              <p>Servicio de envío en menos de 90 minutos de duración. Ideal para cuando necesitas hacer entregas urgentes de forma rápida</p>
               <a class="ss-btn" href="services-day.html" style="font-weight: bold;">Conocer más</a>
             </div>
           </div>
@@ -145,8 +150,8 @@
               <div class="icon">
                 <img src="././public/assets/img/24-horas.gif" alt="Imagen" />
               </div>
-              <h4><a href="services-day.html">Envíos en el día</a></h4>
-              <p>Servicio de envío dentro de las 24 horas. Podés elegir un rango horario para la entrega lo que permite una mayor flexibilidad en tu planificación </p>
+              <h4><a href="services-day.html">En el día</a></h4>
+              <p>Servicio de envío dentro de las 24 horas. El paquete llegará en transcurso del dia, lo cual te brinda una entrega eficiente para tus envíos</p>
               <a class="ss-btn" href="services-day.html" style="font-weight: bold;">Conocer más</a>
             </div>
           </div>
@@ -154,70 +159,116 @@
       </div>
     </section>
     
+     <!-- ======= Clients Section ======= -->
+     <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+        <div class="row d-flex align-items-center">
+          <div class="carousel">
+            <div class="carousel-container">
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="./public/assets/img/LogoCarousel1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="./public/assets/img/LogoCarousel2.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="./public/assets/img/LogoCarousel1.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="./public/assets/img/LogoCarousel2.png" class="img-fluid" alt="">
+                    </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="./public/assets/img/LogoCarousel1.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="./public/assets/img/LogoCarousel2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="./public/assets/img/LogoCarousel1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="./public/assets/img/LogoCarousel2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="./public/assets/img/LogoCarousel1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="./public/assets/img/LogoCarousel2.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                  <img src="./public/assets/img/LogoCarousel1.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                  <img src="./public/assets/img/LogoCarousel2.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- End Clients Section  -->
 
- <!-- ======= Pricing Section ======= -->
- <section id="pricing" class="pricing">
+
+
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
   <div class="container" style="padding: 20px; margin-top: -40px; margin-bottom: 40px;">
 
     <div class="section-title">
       <span>Tarifas</span>
-      <h2>Tarifas</h2>
       <p>Tenemos planes con las mejores tarifas</p>
     </div>
 
     <div class="row">
       <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
         <div class="box">
-          <h3 style="color: #0f4434;">Clasico</h3>
-          <h4><sup>$</sup>100<span> / mes</span></h4>
+          <h3 style="color: #096956;">30 envios mensuales</h3>
+          <!-- <h4><sup>$</sup>100<span> / mes</span></h4> -->
           <ul>
-            <li>30 envios mensuales</li>
             <li>Soporte inmediato</li>
             <li>Seguimiento de envío</li>
             <!-- <li class="na">Atencion personalizada</li> -->
             <li class="na">Almacenamiento</li>
           </ul>
           <div class="btn-wrap">
-            <a href="#" class="btn-buy">Contratar</a>
+            <a href="https://wa.me/3874048429?text=Hola,%20estoy%20interesado/a%20en%20el%20servicio%20de%2030%20envíos%20mensuales." target="_blank" class="btn-buy">Saber más</a>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
         <div class="box featured">
-          <h3 style="color: #0f4434;">Avanzado</h3>
-          <h4><sup>$</sup>200<span> / mes</span></h4>
+          <h3 style="color: white;">60 envios mensuales</h3>
+          <!-- <h4><sup>$</sup>200<span> / mes</span></h4> -->
           <ul>
-            <li>60 envios mensuales</li>
             <li>Soporte inmediato</li>
             <li>Seguimiento de envios</li>
             <li class="na">Almacenamiento</li>
           </ul>
           <div class="btn-wrap">
-            <a href="#" class="btn-buy">Contratar</a>
+            <a href="https://wa.me/3874048429?text=Hola,%20estoy%20interesado/a%20en%20el%20servicio%20de%2060%20envíos%20mensuales." target="_blank" class="btn-buy">Saber más</a>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
         <div class="box">
-          <h3 style="color: #0f4434;">Experto</h3>
-          <h4><sup>$</sup>300<span> / mes</span></h4>
+          <h3 style="color: #096956;">90 envíos mensuales</h3>
+          <!-- <h4><sup>$</sup>300<span> / mes</span></h4> -->
           <ul>
-            <li>90 envíos mensuales</li>
             <li>Soporte inmediato</li>
             <li>Seguimiento de envíos</li>
             <li>Almacenamiento</li>
           </ul>
           <div class="btn-wrap">
-            <a href="#" class="btn-buy">Contratar</a>
+            <a href="https://wa.me/3874048429?text=Hola,%20estoy%20interesado/a%20en%20el%20servicio%20de%2090%20envíos%20mensuales." target="_blank" class="btn-buy">Saber más</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section><!-- End Pricing Section -->
-
 
   </main><!-- End #main -->
 
@@ -258,9 +309,9 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <ul>
               <li><span>Servicios</span></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-express.html">Envío express</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-day.html">Envío en el día</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-pactado.html">Envío pactado</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-express.html">Menos de 90 minutos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-day.html">En el día</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-pactado.html">Entrega pactada</a></li>
             </ul>
           </div>
 

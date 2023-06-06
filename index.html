@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <!-- <title>Day Bootstrap Template - Index</title> -->
@@ -25,6 +26,7 @@
   <link href="./public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="./public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="./public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-...">
 
   <!-- Template Main CSS File -->
   <link href="./public/assets/css/style.css" rel="stylesheet">
@@ -34,10 +36,14 @@
 <body>
 
   <div id="root"></div>
-
-
+  
+  
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
+    <a href="https://wa.me/3874048429?text=Hola%2C%20estoy%20interesado/a%20en%20conocer%20más%20sobre%20los%20servicios%20de%20Yending.%20¿Pueden%20brindarme%20más%20información%3F" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo"><img src="./public/assets/img/logo.png" alt="" class="img-fluid-logo"></a>
@@ -48,15 +54,15 @@
           <li><a class="nav-link scrollto" href="quienes-somos.html">Quiénes somos</a></li>
             <li class="dropdown"><a class="nav-link scrollto" ><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="services-express.html">Envíos express</a></li>
-                <li><a href="services-day.html">Envíos en el día</a></li>
-                <li><a href="services-pactado.html">Envíos pactados</a></li>
+                <li><a href="services-express.html">Menos de 90 mins</a></li>
+                <li><a href="services-day.html">En el día</a></li>
+                <li><a href="services-pactado.html">Entrega pactada</a></li>
                 </ul>
               </li>
              
               <li><a class="nav-link scrollto" href="contact.html">Contacto</a></li>
               <div id="rootLogin">
-                <li><a class="nav-link scrollto">Ingresar</a></li>
+                <li><a class="nav-link scrollto" onclick="window.location.href='https://yending.lightdata.app/'">Ingresar</a></li>
             </div>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -67,16 +73,17 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1 style="margin: -10px; margin-left: -40px; margin-top: 50px; color: #0d5c4c;">  La forma más simple </h1> 
-      <h1 style="color: #0d5c4c;  margin-left: -40px";>de gestionar tus envíos</h1>
-      <h2 style="color: black;  margin-left: -40px">¿Querés saber dónde está tu paquete?</h2> 
+    <div  data-aos="fade-up" data-aos-delay="500">
+      <h1 style="margin-bottom:-10px; ; margin-top: 150px; font-weight: bold;">La forma más simple </h1> 
+      <h1>de gestionar tus envíos</h1>
+      <h2 style="color: black; font-weight: bold;">¿Querés saber dónde está tu paquete?</h2> 
  
-      <div class="form-search d-flex align-items-stretch mb-1" >
-        <div class="btn-primaryDiv">
-          <button type="submit" class="btn-primary2" href='https://yending.lightdata.app/tracking.php' >Seguir mi envío</button>
-      </div>
-      </div>
+      <!-- <div class="form-search d-flex align-items-stretch mb-1" > -->
+        <div >
+          <button type="submit" class="btn-primary2" onclick="window.location.href='https://yending.lightdata.app/tracking.php'">Seguir mi envío</button>
+        </div>
+      <!-- </div> -->
+      
     </div>
 </section><!-- End Hero -->
 
@@ -100,7 +107,7 @@
               <li><i class="bx bx-check-circle"></i> Nuestro servicio es sostenible lo que nos permite reducir nuestra huella de carbono.</li>
             </ul>
         
-              <a class="sobreNosotros" href="quienes-somos.html">Saber más</a>
+              <!-- <a class="sobreNosotros" href="quienes-somos.html">Saber más</a> -->
         
           </div>
         </div>
@@ -118,7 +125,7 @@
             <div class="box" >
               <span ></span>
               <h4>Rápido y seguro</h4>
-              <p>Nos aseguramos de que cada envío sea tratado con elñ mayor cuidado y atención</p>
+              <p>Nos aseguramos de que cada envío sea tratado con el mayor cuidado y atención</p>
             </div>
           </div>
 
@@ -199,27 +206,26 @@
       <div class="container">
         <div class="section-title">
           <span>Servicios</span>
-          <h2>Servicios</h2>
           <p>Nuestros envíos se clasifican de acuerdo a las necesidades de tu negocio</p>
         </div>
         <div class="row">
-          <div   class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" >
-          <div class="icon-box">
-            <div class="icon">
-              <img src="./public/assets/img/bicicleta.gif" alt="Imagen" />
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon">
+                <img src="./public/assets/img/bicicleta.gif" alt="Imagen" />
+              </div>
+              <h4><a>Menos de 90 minutos</a></h4>
+              <p>Servicio de envío en menos de 90 minutos de duración. Ideal para cuando necesitas hacer entregas urgentes de forma rápida</p>
+              <a class="ss-btn" href="services-express.html" style="font-weight: bold;">Conocer más</a>
             </div>
-            <h4><a>Envíos express</a></h4>
-            <p>Servicio de envío express de menos de 90 minutos de duración. Ideal para cuando necesitas hacer entregas urgentes de forma rápida</p>
-            <a class="ss-btn" href="services-express.html" style="font-weight: bold;">Conocer más</a>
           </div>
-        </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
             <div class="icon-box">
               <div class="icon">
                 <img src="./public/assets/img/24-horas.gif" alt="Imagen" />
               </div>
-              <h4><a href="">Envíos en el día</a></h4>
-              <p>Servicio de envío dentro de las 24 horas. Podés elegir un rango horario para la entrega lo que permite una mayor flexibilidad en tu planificación </p>
+              <h4><a href="services-day.html">En el mismo día</a></h4>
+              <p>Servicio de envío dentro de las 24 horas. El paquete llegará en transcurso del dia, lo cual te brinda una entrega eficiente para tus envíos</p>
               <a class="ss-btn" href="services-day.html" style="font-weight: bold;">Conocer más</a>
             </div>
           </div>
@@ -228,8 +234,8 @@
               <div class="icon">
                 <img src="./public/assets/img/entrega.gif" alt="Imagen" />
               </div>
-              <h4><a href="">Envíos pactados</a></h4>
-              <p>Servicio de envío con fecha y horarios pactados. Podés planificar tus entregas con anticipación y coordinar con tus clientes la recepción de su paquete</p>
+              <h4><a href="">Entrega pactada</a></h4>
+              <p>Servicio de envío con fecha y horarios pactados. Podés planificar tus entregas con anticipación y coordinar con tus clientes la recepción de su paquete.</p>
               <a class="ss-btn" href="services-pactado.html" style="font-weight: bold;">Conocer más</a>
             </div>
           </div>
@@ -247,8 +253,8 @@
       <div class="container" data-aos="zoom-in">
 
         <div class="text-center">
-          <h3>¿Tenés una pyme?</h3>
-          <p> Potenciá y expandí tu negocio utilizando los servicios que tenemos disponibles para vos </p>
+          <h3 style="color: white ">¿Tenés una pyme?</h3>
+          <p style="color: white "> Potenciá y expandí tu negocio utilizando los servicios que tenemos disponibles para vos </p>
           <a class="cta-btn" href="quienes-somos.html">Saber más</a>
         </div>
 
@@ -262,13 +268,12 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Contactános</span>
-          <h2>Contactános</h2>
+          <span>Contactanos</span>
           <!-- <p>Hacé tu consulta</p> -->
 
         </div>
 
-        <div class="row" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" style="padding-top: 20px;">
           <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
@@ -303,7 +308,7 @@
           </div>
           
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="/message" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
@@ -352,11 +357,9 @@
                 <strong>Email: </strong> info@yending.com.ar<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/yending.salta/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-                <a href="https://www.linkedin.com/company/yending/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.instagram.com/yending.salta/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=3874048429" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/yending/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -376,9 +379,9 @@
             <!-- <h4>Servicios</h4> -->
             <ul>
               <li><span>Servicios</span></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-express.html">Envíos express</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-day.html">Envíos en el día</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services-pactado.html">Envíos pactados</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-express.html">Menos de 90 minutos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-day.html">En el día</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services-pactado.html">Entrega pactada</a></li>
 
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Servicio 5</a></li> -->
             </ul>

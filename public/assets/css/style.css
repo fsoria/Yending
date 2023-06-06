@@ -29,7 +29,7 @@ h4,
 h5,
 h6 {
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .h2{
@@ -90,12 +90,13 @@ h6 {
   font-weight: bold;
   font-size: 18px;
   padding: 10px;
-  margin-left: 40px;
+  margin-left: 55%;
+
 }
 
 .btn-primary2:hover{
   background: #0d4f41;
-  color: white;
+  color: #fdc727;
 }
 
 
@@ -414,7 +415,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #096956;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -422,14 +423,14 @@ h6 {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
-  color: #191919;
+  font-size: 17px;
+  color: white;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #096956;
+  color: #fdc727c4;
   background: none;
 }
 
@@ -477,11 +478,10 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 70px);
   background: url("../img/hero-bg.jpg") top center no-repeat;
   background-size: 100%;
   background-position: top center;
-  background-position-y: -370px;
   position: relative;
 }
 
@@ -498,18 +498,18 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 50px 0;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color:#f3f5f4
+  color:#096956;
+  margin-left: 250px;
 }
 
 #hero h2 {
-  color: #eee;
   margin-bottom: 30px;
   font-size: 20px;
+  margin-left: 250px;
 }
 
 #hero .btn-get-started {
@@ -529,7 +529,9 @@ h6 {
   background: #096956;
   border-color: #096956;
 }
-@media (max-width: 370px) {
+
+/* revisado ok */
+@media (min-width: 0px) and (max-width: 370px) {
   #hero {
     text-align: center;
   }
@@ -539,127 +541,134 @@ h6 {
   }
 
   #hero h1 {
-    color: #096956 !important;
-      font-size: 28px;
-      line-height: 36px;
-      margin-left: 5px !important;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    color: #0d0d0d !important;
+    color: black!important;
+    font-size: 25px;
     font-weight: bold;
-    margin-left: 3px !important;
+    line-height: 36px;
+    margin-left: 0px !important;
+    width: 100%;
+    margin-bottom: 0px !important;
   }
-
-  .btn-primary2 {
-    margin-left: 80px !important;
-    display: flex;
-    justify-content: center !important;
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: black!important;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    padding-bottom: 10px;
   }
-  
   #hero:before{
   background: url("../img/hero-bg.jpg") top center no-repeat;
   background-size: cover;
   }
+  .btn-primary2{
+    margin-top: -5px !important; /* Añade un margen superior para separarlo */
+    margin-left: 0px;
+    font-size: 15px;
+  }
 }
 
-
+/* revisado ok, se podria mejorar (ver margen izq) */
   @media (min-width: 370px) and (max-width: 700px)  {
     #hero {
       text-align: center;
     }
-  
     #hero .container {
       padding-top: 40px;
     }
-  
     #hero h1 {
-      color: #096956 !important;
-      font-size: 28px;
+      color: black !important;
+      font-weight: bold;
       line-height: 36px;
-      margin-left: 1px !important;
+      margin-left: 5px !important;
+      width: 100%;
     }
-  
     #hero h2 {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 30px;
       color: black !important;
       font-weight: bold;
-      margin-left: 3px !important;
-    }
-
-    .btn-primary2{
-      margin-left: 67px; /* Elimina el margen izquierdo en pantallas pequeñas */
-      margin-top: 10px; /* Añade un margen superior para separarlo */
+      margin-left: 5px !important;
       width: 100%;
     }
-  
+    .btn-primary2{
+      margin-top: 10px; /* Añade un margen superior para separarlo */
+      margin-left: 0px !important;
+    }
     #hero:before{
     background: url("../img/hero-bg.jpg") top center no-repeat;
     background-size: cover;
     }
 }
 
-@media (min-width: 700px) and (max-width: 1023px){
+/* revisado ok */
+@media (min-width: 700px) and (max-width: 900px){
   #hero {
     text-align: center;
   }
-
   #hero .container {
     padding-top: 40px;
   }
-
   #hero h1 {
     color: #096956 !important;
-    font-size: 28px;
+    font-size: bold;
     line-height: 36px;
-    margin-left: 1px !important;
+    margin-left: 10% !important;
+    width: 100%;
   }
-
   #hero h2 {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 30px;
     color: black !important;
     font-weight: bold;
-    margin-left: 3px !important;
+    margin-left: 10% !important;
+    width: 100%;
   }
-
   .btn-primary2{
-    margin-left: 260px; /* Vuelve a aplicar el margen izquierdo para pantallas más grandes */
     margin-top: 0; /* Elimina el margen superior */
-    width: auto;
-    font-size: 20px;
+    margin-left: 20%;
   }
-
   #hero:before{
   background: url("../img/hero-bg.jpg") top center no-repeat;
   background-size: cover;
   }
 }
-
-@media (min-width: 1024px) and (max-width: 1100px) {
+/* revisado ok */
+@media (min-width: 900px) and (max-width: 1100px) {
   #hero {
     background-attachment: fixed;
   }
   #hero:before{
     background: url("../img/hero-bg.jpg") top center no-repeat;
     background-size: cover;
-    }
-    #hero h2 {
-      font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 30px;
-      color: black !important;
-      font-weight: bold;
-    }
+  }
+  #hero h1 {
+    color: #096956 !important;
+    line-height: 36px;
+    margin-left: 20% !important;
+    width: 100%;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    color: black !important;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 20% !important;
+  }
+  .btn-primary2{
+    margin-top: 0; /* Elimina el margen superior */
+    margin-left: 45%;
+  }
 
 }
 
+/* ver si es necesario, no revisado */
 @media (min-width: 1100px) and (max-width: 1200px) {
   #hero {
     background-attachment: fixed;
@@ -676,11 +685,11 @@ h6 {
       color: black !important;
       font-weight: bold;
     }
-    .btn-primary2{
-      margin-left: 50px;
+    #hero h1 {
+      color:#096956 !important
     }
 }
-
+/* ver si es necesario, no revisado */
 @media (min-width: 1200px) and (max-width: 1350px)  {
   #hero {
     background-attachment: fixed;
@@ -696,10 +705,12 @@ h6 {
       color: black !important;
       font-weight: bold;
     }
-    .btn-primary2{
-      margin-left: 45px;
+    #hero h1 {
+      color:#096956 !important
     }
+
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -726,7 +737,7 @@ section2 {
 
 .section-title {
   text-align: center;
-  padding: 30px 0;
+  padding: 40px 0px;
   position: relative;
 }
 .section-title-inner {
@@ -735,8 +746,8 @@ section2 {
   position: relative;
 }
 
-.section-title h2 {
-  font-size: 32px;
+/* .section-title h2 {
+  font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -744,19 +755,20 @@ section2 {
   color: #191919;
   position: relative;
   z-index: 2;
-}
+} */
 
 .section-title span {
   position: absolute;
   top: 30px;
-  color: #dfdfdf;
+  color: #fdc727c4;
   left: 0;
   right: 0;
   z-index: 1;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 45px;
   text-transform: uppercase;
   line-height: 0;
+  padding-bottom: 10px;
 }
 
 .section-title p {
@@ -764,7 +776,8 @@ section2 {
   position: relative;
   z-index: 2;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
+  margin-top: 25px !important;
 }
 
 @media (max-width: 575px) {
@@ -782,12 +795,11 @@ section2 {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-weight: 600;
-  font-size: 23px;
+  font-size: 20px;
   margin-right: 50px;
   color: white;
   background-color: #096956;
-  border-radius: 0 10px 10px 10px ;
+  border-radius: 10px 10px 10px 10px ;
   padding: 15px;
   margin-top: 40px;
 }
@@ -811,7 +823,7 @@ section2 {
 }
 
 .about .content ul i {
-  font-size: 20px;
+  font-size: 17px;
   padding-right: 4px;
   color: #096956;
 }
@@ -872,10 +884,9 @@ section2 {
     font-size: 23px;
     color: white;
     background-color: #096956;
-    border-radius: 0 10px 10px 10px ;
     padding: 15px;
     margin-top: -10px !important;
-    width: 330px;
+    width: 100%;
   }
   .sobreNosotros:hover{
     background-color: #096956;
@@ -886,19 +897,20 @@ section2 {
     padding-bottom: 10px;
     margin-right: 80px !important;
     padding: 15px;
-    width: 330px;
+    width: 100%;
   }
   
   .about .content p {
     padding-bottom: 10px;
     margin-right: 80px !important;
-    width: 330px;
+    width: 100%;
+    -webkit-text-size-adjust: 100%
   }
  
 }
 
 
-@media (min-width: 375px) and (max-width: 420px){
+@media (min-width: 370px) and (max-width: 420px){
     .sobreNosotros {
     text-decoration: none;
     font-family: "Poppins Regular", sans-serif;
@@ -916,6 +928,7 @@ section2 {
     align-items: center;
     width: 150px;
     margin-left: 100px; /* Centrar horizontalmente */
+    -webkit-text-size-adjust: 100%
   } 
 
   .about .content h3 {
@@ -923,7 +936,6 @@ section2 {
     font-size: 23px;
     color: white;
     background-color: #096956;
-    border-radius: 0 10px 10px 10px ;
     padding: 15px;
     margin-top: -10px !important;
     width: 350px;
@@ -972,7 +984,6 @@ section2 {
   font-size: 23px;
   color: white;
   background-color: #096956;
-  border-radius: 0 10px 10px 10px ;
   padding: 15px;
   margin-top: -10px !important;
   width: 350px;
@@ -1022,7 +1033,6 @@ section2 {
   font-size: 23px;
   color: white;
   background-color: #096956;
-  border-radius: 0 10px 10px 10px ;
   padding: 15px;
   margin-top: -10px !important;
   margin-left: 20px;
@@ -1087,7 +1097,7 @@ section2 {
 }
 
 .why-us .box h4 {
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
@@ -1212,6 +1222,7 @@ section2 {
   width:130px;
   height: 130px;
   padding: 20px;
+  color: #13b1cd;
 }
 
 .services .icon-box .icon::before {
@@ -1229,10 +1240,10 @@ section2 {
 
 .services .icon-box h4 {
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 21px;
   color: #090909;
   padding: 40px;
+  padding-bottom: 20px;
 }
 
 .services .icon-box h4 a {
@@ -1242,7 +1253,7 @@ section2 {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 0;
   color:black
   
@@ -1312,6 +1323,15 @@ section2 {
   color: #fdc727;
 }
 
+@media (max-width: 360px){
+  #services h3{
+    font-size: 15px;
+  }
+
+  .header-title {
+    font-size: 20px !important;
+  }
+}
 
 /*--------------------------------------------------------------
 # Cta
@@ -1328,21 +1348,21 @@ section2 {
   background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-express.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
-  height: 440px;
+  height: 550px;
 }
 
 .cta-day{
   background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-day.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
-  height: 440px;
+  height: 550px;
 }
 
 .cta-pactado {
   background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-pactado.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
-  height: 440px;
+  height: 550px;
 }
 
 .cta h3 {
@@ -1354,7 +1374,7 @@ section2 {
 
 .cta p {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   color: #096956;
 }
 
@@ -1442,6 +1462,7 @@ section2 {
   transition: all ease-in-out 0.3s;
   background: rgba(255, 255, 255, 0.9);
   padding: 15px;
+  width: 100%;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -1449,12 +1470,14 @@ section2 {
   color: #fff;
   font-weight: 600;
   color: #191919;
+  width: 100%;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
   color: #4c4c4c;
   font-size: 14px;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
@@ -1507,13 +1530,31 @@ section2 {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
 .portfolio-details {
   padding-top: 20px;
 }
 
+.imgQuienes{
+  height: 600px; 
+  width: 520px; 
+  margin-left: 150px ;
+  border-radius: 0 20px 20px 20px;
+}
+
+
+.imgServices {
+  width: 100%;
+  height: auto;
+  border-radius: 0 20px 20px 20px !important;
+  padding-left: 30px;
+
+}
+
+
 .portfolio-details .portfolio-details-slider img {
   width: 50%;
-  margin-left: 150px;
+  margin-left: 80px;
   border-radius: 0 20px 20px 20px;
 }
 
@@ -1542,7 +1583,7 @@ section2 {
 }
 
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1561,18 +1602,17 @@ section2 {
 
 
 .portfolio-details .portfolio-description h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 19px;
   margin-bottom: 20px;
   background-color: #096956;
   border-radius: 0 10px 10px 10px;
   color: white;
-  height: 70px;
-  width: 250px ;
+  height: 60px;
+  width: 100%;
   padding-top: 20px;
   padding-left: 20px;
-  margin-left: 145px;
 }
 
 .h2-pactado {
@@ -1581,6 +1621,13 @@ section2 {
   padding-top: 30px;
   padding-bottom: 40px !important;
   margin-left: 0px !important;
+}
+
+.portfolio-details .portfolio-description p {
+  font-size: 20px; 
+  text-align: justify; 
+  width: 100vw;
+  padding-right: 20px;
 }
 
 .p-portfolio {
@@ -1606,22 +1653,138 @@ section2 {
   border-radius: 0 20px 20px 20px;
 }
 
+@media (max-width: 680px) {
 
-@media (max-width: 986px) {
+  .imgServices-Swiper {
+    width: 100vw;
+    height: auto;
+    margin-left: 0px !important;
+  }
+  .imgServices{
+    border-radius: 0 20px 20px 20px ;
+    padding-left: 0px !important;
+  }
+}
 
-  .portfolio-details .portfolio-description h2 {
-    font-weight: 700;
-    margin-bottom: 20px;
-    height: 70px;
-    width: 280px !important;
-    padding-top: 20px;
-    margin-left: 20px;
+@media (min-width: 680px) and (max-width: 1100px) {
+
+  .imgServices-Swiper {
+    width: 100vw;
+    margin-right: 20px !important;
+    margin-left: 0px !important;
+    padding-right: 20px;
+  }
+  .imgServices{
+    border-radius: 0 20px 20px 20px ;
+    padding-left: 0px !important;
+    height: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+
+  .portfolio-details-slider img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor recortando si es necesario */
+    margin-left: 0;
+    margin-left: 90px !important;
   }
 
-  .portfolio-details .portfolio-details-slider img {
-    width: 90%;
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+    margin-left: -10px;
+  }
+
+
+  .h2-pactado {
+    height: 120px;
+    width: auto !important;
+    padding-top: 30px;
+    padding-bottom: 40px !important;
+    margin-left: 0px !important;
+  }
+  .p-portfolio {
+    padding: 0px;
+    font-size: 22px; 
+    text-align: justify; 
+    margin-left: 10px !important; 
+    width: auto;
+  }
+
+  .p-portfolio-pactado {
+    padding: 0px;
+    font-size: 21px !important; 
+    text-align: justify; 
+    margin-left: 10px !important; 
+    width: auto !important;
+  }
+  .img-portfolio{
+    height: 250px ; 
+    width: 330px ; 
     border-radius: 0 20px 20px 20px;
-    margin-left: 15px;
+    margin-left: 10px !important;
+    padding-bottom: -20px;
+  }
+  .quienes-somos{
+    padding-top: 17px;
+    text-align:justify;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 200px !important;
+  }
+  .portfolio-details .portfolio-description p {
+    width: 100% !important;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 688px){
+  .quienes-somos-titulo{
+    margin-left: 30px;
+  }
+  .header-title{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 688px) and (max-width: 1100px){
+  .quienes-somos-titulo{
+    height: 25vh !important;
+  }
+  .header{
+    height: 15vh !important;
+  }
+  .header2{
+    height: 15vh !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 986px) {
+
+  .breadcrumbs-quienes-somos {
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background: url(../img/hero-bg1.jpg);
+    background-position-y: 0px !important;
+  } 
+
+  .quienes-somos p{
+    color: #060606 ;
+    font-family: sans-serif; 
+    font-size: 19px; 
+    width: 100%;
+    margin-left: -250px;
+    padding: 10px;
+   }
+
+  .portfolio-details .portfolio-details-slider img {
+    width: auto;
+    border-radius: 0 20px 20px 20px;
+    margin-left: 100px;
   }
 
   .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1660,25 +1823,22 @@ section2 {
     margin-left: 10px !important;
     padding-bottom: -20px;
   }
-  .quienes-somos p{
+  .quienes-somos{
     padding-top: 17px;
     text-align:justify;
-    width: auto;
+    width: 100%;
     max-width: 100%;
-    margin-left: 40px !important;
+    margin-left: 280px !important;
+  }
+  .portfolio-details .portfolio-description p {
+    width: 100% !important;
+    padding-left: 20px;
   }
 }
 
+
 @media (min-width: 986px) and (max-width: 1300px) {
 
-  .portfolio-details .portfolio-description h2 {
-    font-weight: 700;
-    margin-bottom: 20px;
-    height: 70px;
-    width: 280px !important;
-    padding-top: 20px;
-    margin-left: 20px;
-  }
 
   .portfolio-details .portfolio-details-slider img {
     width: 65%;
@@ -1722,6 +1882,9 @@ section2 {
     margin-left: 10px !important;
     padding-bottom: -20px;
   }
+  .portfolio-details .portfolio-description p {
+    width: 100% !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1729,7 +1892,7 @@ section2 {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #fdc7279a;;
+  background: #fdc7279a;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -1739,10 +1902,11 @@ section2 {
 .pricing .box h3 {
   font-weight: 400;
   padding: 15px;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
   color: #0f4434;
+  font-weight:bold ;
 }
 
 .pricing .box h4 {
@@ -1902,7 +2066,7 @@ section2 {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  font-weight: bolder;
+  font-size: 17px;
   color: #096956 !important;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
@@ -2061,12 +2225,23 @@ section2 {
   background-size: cover;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .breadcrumbs-quienes-somos{
     background-repeat: no-repeat;
     background-size: cover !important;
     background: url("../img/hero-bg1.jpg");
+    background-position: center;
   }
+}
+@media (min-width: 1200px) {
+.breadcrumbs-quienes-somos {
+  padding: 15px 0;
+  background: url("../img/hero-bg1.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -280px;
+}
 }
 
 .breadcrumbs h2 {
@@ -2093,6 +2268,40 @@ section2 {
   color: #333333;
   content: "/";
 }
+
+/* @media (min-width: 500px) {
+  .breadcrumbs-quienes-somos{
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background: url("../img/hero-bg1.jpg");
+  }
+} */
+
+.breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #333333;
+  content: "/";
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -2208,6 +2417,7 @@ section2 {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
+  outline: none;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit] {
@@ -2222,7 +2432,7 @@ section2 {
   background: #096956;
   color: #fff;
   transition: 0.3s;
-  border-radius: 4;
+  /* border-radius: 4; */
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
@@ -2263,19 +2473,19 @@ section2 {
 /*---------------------------------------------------------*/
 
 .quienes-somos-titulo{
-  display: flex !important;
-  flex-direction: column !important;
+  display: flex ;
+  flex-direction: column ;
   justify-content: center !important;
   align-items: center !important ;
   height: 38vh;
+  max-height: 100%;
   color: black;
 }
 
-@media (max-width: 768px){
-  .quienes-somos-titulo{
-    margin-left: 30px;
-  }
+.h2-quienes-somos-titulo{
+  font-size: 28px;
 }
+
 
 .quienes-somos{
   padding-top: 17px;
@@ -2287,8 +2497,8 @@ section2 {
 .quienes-somos p{
  color: #060606 ;
  font-family: sans-serif; 
- font-size: 21px; 
- max-width: 500px; 
+ font-size: 19px; 
+ width: 100%;
  margin-left: -200px;
  padding: 10px;
 }
@@ -2322,8 +2532,7 @@ section2 {
 
 .header-title {
   font-family: Poppins, sans-serif;
-  font-weight:bold 400;
-  font-size: 2rem;
+  font-weight:bold;
   color: #fdc727;
 
 }
@@ -2339,6 +2548,29 @@ section2 {
 }
 
 
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 70px;
+  right: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-float i {
+  margin-top: 18px;
+}
+
+.whatsapp-float:hover {
+  background-color: #096956;
+  color: #fff;
+}
 
 
 
