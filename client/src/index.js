@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Message from './components/Message'
-import Login from './components/Login'
+
+import Login from '../components/Login'
 import Tracking from './components/Tracking'
 import Subscribe from './components/Subscribe'
 import reportWebVitals from './reportWebVitals';
