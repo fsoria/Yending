@@ -4,7 +4,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Poppins Regular", sans-serif;
-  color: #444444;
+  /* color: #444444; */
+  background-image: linear-gradient(180deg,#f3f3f3 0%,#adb5bd1f 100%)
 }
 
 a {
@@ -28,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins-ExtraLight', sans-serif;
   /* font-weight: bold; */
 }
 
@@ -196,7 +197,7 @@ h6 {
   /* background: #096956; */
   transition: all 0.5s;
   z-index: 997;
-  height: 70px;
+  height: 75px;
 }
 
 #header.fixed-top {
@@ -268,6 +269,7 @@ h6 {
   white-space: nowrap;
   transition: 0.3s;
   cursor: pointer;
+  font-family: Poppins-Regular, sans-serif;
 }
 
 .navbar a i,
@@ -530,209 +532,17 @@ h6 {
   border-color: #096956;
 }
 
-/* revisado ok */
-@media (min-width: 0px) and (max-width: 370px) {
-  #hero {
-    text-align: center;
-  }
-
-  #hero .container {
-    padding-top: 40px;
-  }
-
-  #hero h1 {
-    color: black!important;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 36px;
-    margin-left: 0px !important;
-    width: 100%;
-    margin-bottom: 0px !important;
-  }
-  #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
-    color: black!important;
-    font-weight: bold;
-    width: 100%;
-    margin-left: 0px !important;
-    margin-top: 0px !important;
-    padding-bottom: 10px;
-  }
-  #hero:before{
-  background: url("../img/hero-bg.jpg") top center no-repeat;
-  background-size: cover;
-  }
-  .btn-primary2{
-    margin-top: -5px !important; /* Añade un margen superior para separarlo */
-    margin-left: 0px;
-    font-size: 15px;
-  }
-}
-
-/* revisado ok, se podria mejorar (ver margen izq) */
-  @media (min-width: 370px) and (max-width: 700px)  {
-    #hero {
-      text-align: center;
-    }
-    #hero .container {
-      padding-top: 40px;
-    }
-    #hero h1 {
-      color: black !important;
-      font-weight: bold;
-      line-height: 36px;
-      margin-left: 5px !important;
-      width: 100%;
-    }
-    #hero h2 {
-      font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 30px;
-      color: black !important;
-      font-weight: bold;
-      margin-left: 5px !important;
-      width: 100%;
-    }
-    .btn-primary2{
-      margin-top: 10px; /* Añade un margen superior para separarlo */
-      margin-left: 0px !important;
-    }
-    #hero:before{
-    background: url("../img/hero-bg.jpg") top center no-repeat;
-    background-size: cover;
-    }
-}
-
-/* revisado ok */
-@media (min-width: 700px) and (max-width: 900px){
-  #hero {
-    text-align: center;
-  }
-  #hero .container {
-    padding-top: 40px;
-  }
-  #hero h1 {
-    color: #096956 !important;
-    font-size: bold;
-    line-height: 36px;
-    margin-left: 10% !important;
-    width: 100%;
-  }
-  #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    color: black !important;
-    font-weight: bold;
-    margin-left: 10% !important;
-    width: 100%;
-  }
-  .btn-primary2{
-    margin-top: 0; /* Elimina el margen superior */
-    margin-left: 20%;
-  }
-  #hero:before{
-  background: url("../img/hero-bg.jpg") top center no-repeat;
-  background-size: cover;
-  }
-}
-/* revisado ok */
-@media (min-width: 900px) and (max-width: 1100px) {
-  #hero {
-    background-attachment: fixed;
-  }
-  #hero:before{
-    background: url("../img/hero-bg.jpg") top center no-repeat;
-    background-size: cover;
-  }
-  #hero h1 {
-    color: #096956 !important;
-    line-height: 36px;
-    margin-left: 20% !important;
-    width: 100%;
-  }
-  #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    color: black !important;
-    font-weight: bold;
-    width: 100%;
-    margin-left: 20% !important;
-  }
-  .btn-primary2{
-    margin-top: 0; /* Elimina el margen superior */
-    margin-left: 45%;
-  }
-
-}
-
-/* ver si es necesario, no revisado */
-@media (min-width: 1100px) and (max-width: 1200px) {
-  #hero {
-    background-attachment: fixed;
-  }
-
-  #hero:before{
-    background: url("../img/hero-bg.jpg") top center no-repeat;
-    background-size: cover;
-    }
-    #hero h2 {
-      font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 30px;
-      color: black !important;
-      font-weight: bold;
-    }
-    #hero h1 {
-      color:#096956 !important
-    }
-}
-/* ver si es necesario, no revisado */
-@media (min-width: 1200px) and (max-width: 1350px)  {
-  #hero {
-    background-attachment: fixed;
-  }
-  #hero:before{
-    background: url("../img/hero-bg.jpg") top center no-repeat;
-    background-size: cover;
-    }
-    #hero h2 {
-      font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 30px;
-      color: black !important;
-      font-weight: bold;
-    }
-    #hero h1 {
-      color:#096956 !important
-    }
-
-}
-
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
   padding: 30px 0;
   overflow: hidden;
+  /* background-image: linear-gradient(180deg,#f3f3f3 0%,#adb5bd1f 100%) */ 
 }
 
 section2 {
   overflow: hidden;
-}
-
-.linea {
-  content: "";
-  width: 90px;
-  height: 3px;
-  background-color: #fdc727;
-  position: absolute;
-  left: 50%;
-  margin-left: -32px;
-  bottom: -25px;
 }
 
 .section-title {
@@ -780,16 +590,7 @@ section2 {
   margin-top: 25px !important;
 }
 
-@media (max-width: 575px) {
-  .section-title h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
 
-  .section-title span {
-    font-size: 38px;
-  }
-}
 
 /*--------------------------------------------------------------
 # About
@@ -859,235 +660,26 @@ section2 {
 }
 
 
-@media (max-width: 370px){
-  .sobreNosotros {
-    text-decoration: none;
-    font-family: "Poppins Regular", sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding: 10px 28px;
-    transition: 0.5s;
-    border: 2px solid #a9a8a8 !important;;
-    background-color: #096956;
-    color: white;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    margin-left: 80px; /* Centrar horizontalmente */
-  }
-
-  .about .content h3 {
-    font-weight: 600;
-    font-size: 23px;
-    color: white;
-    background-color: #096956;
-    padding: 15px;
-    margin-top: -10px !important;
-    width: 100%;
-  }
-  .sobreNosotros:hover{
-    background-color: #096956;
-    color: #fff
-  }
-
-  .about .content ul li {
-    padding-bottom: 10px;
-    margin-right: 80px !important;
-    padding: 15px;
-    width: 100%;
-  }
-  
-  .about .content p {
-    padding-bottom: 10px;
-    margin-right: 80px !important;
-    width: 100%;
-    -webkit-text-size-adjust: 100%
-  }
- 
-}
-
-
-@media (min-width: 370px) and (max-width: 420px){
-    .sobreNosotros {
-    text-decoration: none;
-    font-family: "Poppins Regular", sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding: 10px 28px;
-    transition: 0.5s;
-    border: 2px solid #a9a8a8 !important;;
-    background-color: #096956;
-    color: white;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    margin-left: 100px; /* Centrar horizontalmente */
-    -webkit-text-size-adjust: 100%
-  } 
-
-  .about .content h3 {
-    font-weight: 600;
-    font-size: 23px;
-    color: white;
-    background-color: #096956;
-    padding: 15px;
-    margin-top: -10px !important;
-    width: 350px;
-  }
-  .sobreNosotros:hover{
-    background-color: #096956;
-    color: #fff
-  }
-
-  .about .content ul li {
-    padding-bottom: 10px;
-    margin-right: 50px !important;
-    padding: 15px;
-    width: 350px;
-  }
-  
-  .about .content p {
-    padding-bottom: 10px;
-    margin-left: 10px !important;
-    width: 330px;
-  }
-}
-
-@media (min-width: 421px) and (max-width: 500px){
-  .sobreNosotros {
-  text-decoration: none;
-  font-family: "Poppins Regular", sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
-  padding: 10px 28px;
-  transition: 0.5s;
-  border: 2px solid #a9a8a8 !important;;
-  background-color: #096956;
-  color: white;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  margin-left: 110px; /* Centrar horizontalmente */
-} 
-
-.about .content h3 {
-  font-weight: 600;
-  font-size: 23px;
-  color: white;
-  background-color: #096956;
-  padding: 15px;
-  margin-top: -10px !important;
-  width: 350px;
-  margin-left: 13px;
-}
-.sobreNosotros:hover{
-  background-color: #096956;
-  color: #fff
-}
-
-.about .content ul li {
-  padding-bottom: 10px;
-  margin-right: 50px !important;
-  padding: 15px;
-  width: 380px;
-}
-
-.about .content p {
-  padding-bottom: 10px;
-  margin-left: 10px !important;
-  width: 360px;
-}
-}
-
-@media (min-width: 700px) and (max-width: 850px){
-  .sobreNosotros {
-  text-decoration: none;
-  font-family: "Poppins Regular", sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
-  padding: 10px 28px;
-  transition: 0.5s;
-  border: 2px solid #a9a8a8 !important;;
-  background-color: #096956;
-  color: white;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  margin-left: 250px !important; /* Centrar horizontalmente */
-} 
-
-.about .content h3 {
-  font-weight: 600;
-  font-size: 23px;
-  color: white;
-  background-color: #096956;
-  padding: 15px;
-  margin-top: -10px !important;
-  margin-left: 20px;
-}
-.sobreNosotros:hover{
-  background-color: #096956;
-  color: #fff
-}
-
-.about .content ul li {
-  padding-bottom: 10px;
-  margin-right: 50px !important;
-  padding: 15px;
-  margin-left: 40px;
-}
-
-.about .content p {
-  padding-bottom: 10px;
-  margin-left: 30px !important;
-}
-}
-
-/* 
-@media (min-width: 7504px) {
- {
-
-
-  }
-}
-
-@media (min-width: 1100px) {
-   {
-
-   
-  }
-}
- */ */
-
-
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 .why-us {
   padding-top: 20px;
 }
+.col-lg-4{
+  margin-bottom: 20px !important
+}
 
 .why-us .box {
   padding: 50px 30px;
-  margin-top: 20px;
   transition: all ease-in-out 0.3s;
   background-color: #fdc727c4;
-  border-radius: 0 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   backdrop-filter: blur(10px);
+  height: 100%;
 
 }
+
 
 .why-us .box span {
   display: block;
@@ -1127,15 +719,6 @@ section2 {
   color: #0a0a0a;
 }
 
-@media(max-width: 768px){
-  .why-us .box{
-    padding: 10px; 
-    box-shadow: 0px 0px 0px rgba(250, 250, 250, 0.1)
-  }
-  .why-us .box:hover{
-    background: #ffffff;
-  }
-}
 
 /*--------------------------------------------------------------
 # Clients
@@ -1183,12 +766,6 @@ section2 {
 }
 
 
-@media (max-width: 768px) {
-  .clients img {
-    width: 40%;
-  }
-}
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1197,10 +774,14 @@ section2 {
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   box-shadow: 0px 2px 15px rgba(242, 6, 6, 0.1);
-  background: white;
-  border: solid #096956; 
+  background: #fff;
+  border: 1px solid #ebebeb; 
   border-radius: 0 15px 15px 20px;
-  
+}
+
+.services .icon-box {
+
+  background: #fff;
 }
 
 
@@ -1318,100 +899,13 @@ section2 {
 
 
 .servicio-h3{
-  padding: 50px; 
-  margin-top: -50px; 
+  padding: 20px; 
+  margin-top: 10px; 
   color: #fdc727;
+  font-size: 20px !important;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 360px){
-  #services h3{
-    font-size: 15px;
-  }
-
-  .header-title {
-    font-size: 20px !important;
-  }
-}
-
-/*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
-.cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta.jpg") fixed center center;
-  background-size: cover;
-  padding: 120px 0;
-  height: 350px;
-}
-
-
-.cta-express {
-  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-express.jpg") fixed center center;
-  background-size: cover;
-  padding: 120px 0;
-  height: 550px;
-}
-
-.cta-day{
-  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-day.jpg") fixed center center;
-  background-size: cover;
-  padding: 120px 0;
-  height: 550px;
-}
-
-.cta-pactado {
-  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-pactado.jpg") fixed center center;
-  background-size: cover;
-  padding: 120px 0;
-  height: 550px;
-}
-
-.cta h3 {
-  font-weight: bold;
-  color: #096956;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.cta p {
-  font-weight: bold;
-  font-size: 18px;
-  color: #096956;
-}
-
-.cta .cta-btn {
-  font-family: "Poppins Regular", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #096956;
-  color: white;
-  background-color: #096956;
-}
-
-.cta .cta-btn:hover {
-  background: rgba(253,199,75,255);
-  border: 2px solid rgba(253,199,75,255);
-}
-
-@media (max-width: 370px){
-  .cta p {
-    font-weight: bold;
-    font-size: 17px;
-    color: #096956;
-  }
-  .cta h3 {
-    font-weight: bold;
-    color: #096956;
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: -30px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1478,6 +972,7 @@ section2 {
   font-size: 14px;
   margin-bottom: 0;
   width: 100%;
+  font-family: Poppins-Regular;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
@@ -1543,13 +1038,40 @@ section2 {
 }
 
 
-.imgServices {
-  width: 100%;
-  height: auto;
-  border-radius: 0 20px 20px 20px !important;
-  padding-left: 30px;
-
+.portfolio-details {
+  position: relative;
+  height: 800px;
 }
+
+.portfolio-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+ /* Ajusta la opacidad según tus preferencias */
+}
+
+.portfolio-image .imgServices {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-description {
+  background-color: rgba(255, 255, 255, 0.2); /* Ajusta el color de fondo y la opacidad según tus preferencias */
+  padding: 20px;
+  border-radius: 2em 0;
+}
+
+.portfolio-description-day {
+  padding: 20px;
+  border-radius: 2em 0;
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
 
 
 .portfolio-details .portfolio-details-slider img {
@@ -1561,7 +1083,7 @@ section2 {
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
-  margin-left: -70px;
+  margin-left: -140px;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
@@ -1583,7 +1105,7 @@ section2 {
 }
 
 .portfolio-details .portfolio-info h3 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1602,9 +1124,8 @@ section2 {
 
 
 .portfolio-details .portfolio-description h2 {
-  font-size: 20px;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 18px;
   margin-bottom: 20px;
   background-color: #096956;
   border-radius: 0 10px 10px 10px;
@@ -1613,6 +1134,7 @@ section2 {
   width: 100%;
   padding-top: 20px;
   padding-left: 20px;
+  font-family: Poppins-Regular, sans-serif;
 }
 
 .h2-pactado {
@@ -1624,11 +1146,26 @@ section2 {
 }
 
 .portfolio-details .portfolio-description p {
-  font-size: 20px; 
+  font-size: 18px; 
   text-align: justify; 
   width: 100vw;
   padding-right: 20px;
+  font-family: Poppins-Regular;
+  font-weight: bold;
+  color: #041f16;
+  border-radius: 2em 0;
 }
+
+.portfolio-details .portfolio-description-day p {
+  font-size: 18px; 
+  text-align: justify; 
+  padding-right: 20px;
+  font-family: Poppins-Regular;
+  font-weight: bold;
+  color: #041f16;
+  border-radius: 2em 0;
+}
+
 
 .p-portfolio {
   padding: 0px;
@@ -1650,242 +1187,74 @@ section2 {
   height: 400px ; 
   width: 600px ; 
   margin-left: 150px; 
-  border-radius: 0 20px 20px 20px;
-}
-
-@media (max-width: 680px) {
-
-  .imgServices-Swiper {
-    width: 100vw;
-    height: auto;
-    margin-left: 0px !important;
-  }
-  .imgServices{
-    border-radius: 0 20px 20px 20px ;
-    padding-left: 0px !important;
-  }
-}
-
-@media (min-width: 680px) and (max-width: 1100px) {
-
-  .imgServices-Swiper {
-    width: 100vw;
-    margin-right: 20px !important;
-    margin-left: 0px !important;
-    padding-right: 20px;
-  }
-  .imgServices{
-    border-radius: 0 20px 20px 20px ;
-    padding-left: 0px !important;
-    height: 100%;
-  }
 }
 
 
-@media (max-width: 600px) {
-
-
-  .portfolio-details-slider img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor recortando si es necesario */
-    margin-left: 0;
-    margin-left: 90px !important;
-  }
-
-  .portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-    margin-left: -10px;
-  }
-
-
-  .h2-pactado {
-    height: 120px;
-    width: auto !important;
-    padding-top: 30px;
-    padding-bottom: 40px !important;
-    margin-left: 0px !important;
-  }
-  .p-portfolio {
-    padding: 0px;
-    font-size: 22px; 
-    text-align: justify; 
-    margin-left: 10px !important; 
-    width: auto;
-  }
-
-  .p-portfolio-pactado {
-    padding: 0px;
-    font-size: 21px !important; 
-    text-align: justify; 
-    margin-left: 10px !important; 
-    width: auto !important;
-  }
-  .img-portfolio{
-    height: 250px ; 
-    width: 330px ; 
-    border-radius: 0 20px 20px 20px;
-    margin-left: 10px !important;
-    padding-bottom: -20px;
-  }
-  .quienes-somos{
-    padding-top: 17px;
-    text-align:justify;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 200px !important;
-  }
-  .portfolio-details .portfolio-description p {
-    width: 100% !important;
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 688px){
-  .quienes-somos-titulo{
-    margin-left: 30px;
-  }
-  .header-title{
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 688px) and (max-width: 1100px){
-  .quienes-somos-titulo{
-    height: 25vh !important;
-  }
-  .header{
-    height: 15vh !important;
-  }
-  .header2{
-    height: 15vh !important;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 986px) {
-
-  .breadcrumbs-quienes-somos {
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    background: url(../img/hero-bg1.jpg);
-    background-position-y: 0px !important;
-  } 
-
-  .quienes-somos p{
-    color: #060606 ;
-    font-family: sans-serif; 
-    font-size: 19px; 
-    width: 100%;
-    margin-left: -250px;
-    padding: 10px;
-   }
-
-  .portfolio-details .portfolio-details-slider img {
-    width: auto;
-    border-radius: 0 20px 20px 20px;
-    margin-left: 100px;
-  }
-
-  .portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-    margin-left: -10px;
-  }
-  
-
-  .h2-pactado {
-    height: 120px;
-    width: auto !important;
-    padding-top: 30px;
-    padding-bottom: 40px !important;
-    margin-left: 0px !important;
-  }
-  .p-portfolio {
-    padding: 0px;
-    font-size: 22px; 
-    text-align: justify; 
-    margin-left: 10px !important; 
-    width: auto;
-  }
-
-  .p-portfolio-pactado {
-    padding: 0px;
-    font-size: 21px !important; 
-    text-align: justify; 
-    margin-left: 10px !important; 
-    width: auto !important;
-  }
-  .img-portfolio{
-    height: 250px ; 
-    width: 330px ; 
-    border-radius: 0 20px 20px 20px;
-    margin-left: 10px !important;
-    padding-bottom: -20px;
-  }
-  .quienes-somos{
-    padding-top: 17px;
-    text-align:justify;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 280px !important;
-  }
-  .portfolio-details .portfolio-description p {
-    width: 100% !important;
-    padding-left: 20px;
-  }
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+  height: 350px;
 }
 
 
-@media (min-width: 986px) and (max-width: 1300px) {
-
-
-  .portfolio-details .portfolio-details-slider img {
-    width: 65%;
-    border-radius: 0 20px 20px 20px;
-    margin-left: 15px;
-  }
-
-  .portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-    margin-left: -130px;
-  }
-  
-
-  .h2-pactado {
-    height: 120px;
-    width: auto !important;
-    padding-top: 30px;
-    padding-bottom: 40px !important;
-    margin-left: 0px !important;
-  }
-  .p-portfolio {
-    padding: 0px;
-    font-size: 22px; 
-    text-align: justify; 
-    margin-left: 10px !important; 
-    width: auto;
-  }
-
-  .p-portfolio-pactado {
-    padding: 0px;
-    font-size: 21px !important; 
-    text-align: justify; 
-    margin-left: 10px !important; 
-    width: auto !important;
-  }
-  .img-portfolio{
-    height: 250px ; 
-    width: 330px ; 
-    border-radius: 0 20px 20px 20px;
-    margin-left: 10px !important;
-    padding-bottom: -20px;
-  }
-  .portfolio-details .portfolio-description p {
-    width: 100% !important;
-  }
+.cta-express {
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-express.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+  height: 550px;
 }
+
+.cta-day{
+  background-size: cover;
+  padding: 120px 0;
+  color: #fdc727;
+  background-color: #096956;
+}
+
+.cta-pactado {
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.3)), url("../img/cta-pactado.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+  height: 550px;
+}
+
+.cta h3 {
+  font-weight: bold;
+  color: #096956;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #096956;
+}
+
+.cta .cta-btn {
+  font-family: "Poppins Regular", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #096956;
+  color: white;
+  background-color: #096956;
+}
+
+.cta .cta-btn:hover {
+  background: rgba(253,199,75,255);
+  border: 2px solid rgba(253,199,75,255);
+}
+
 
 /*--------------------------------------------------------------
 # Pricing
@@ -2011,7 +1380,7 @@ section2 {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
+/* .team .member {
   text-align: center;
   margin-bottom: 20px;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -2060,7 +1429,7 @@ section2 {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact
@@ -2225,24 +1594,6 @@ section2 {
   background-size: cover;
 }
 
-@media (max-width: 500px) {
-  .breadcrumbs-quienes-somos{
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    background: url("../img/hero-bg1.jpg");
-    background-position: center;
-  }
-}
-@media (min-width: 1200px) {
-.breadcrumbs-quienes-somos {
-  padding: 15px 0;
-  background: url("../img/hero-bg1.jpg");
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: -280px;
-}
-}
 
 .breadcrumbs h2 {
   font-size: 26px;
@@ -2482,15 +1833,15 @@ section2 {
   color: black;
 }
 
-.h2-quienes-somos-titulo{
+/* .h2-quienes-somos-titulo{
   font-size: 28px;
-}
+} */
 
 
 .quienes-somos{
   padding-top: 17px;
   text-align: justify;
-  width: 400px;
+  width: 500px;
   margin-right: 250px !important;
 }
 
@@ -2499,7 +1850,7 @@ section2 {
  font-family: sans-serif; 
  font-size: 19px; 
  width: 100%;
- margin-left: -200px;
+ margin-left: -250px;
  padding: 10px;
 }
 
@@ -2512,7 +1863,7 @@ section2 {
   font-size: 22px; 
   padding: 10px;
   max-width: 700px; 
-  margin-left: -190px;
+  margin-left: -240px;
  }
 
 .text-primary {
@@ -2528,12 +1879,14 @@ section2 {
   background-color: #096956;
   background-size: cover !important;
   margin-top: 0px !important;
+  padding: 10px;
 }
 
 .header-title {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins-ExtraLight, sans-serif;
   font-weight:bold;
   color: #fdc727;
+  font-size: 30px;
 
 }
 
@@ -2571,6 +1924,874 @@ section2 {
   background-color: #096956;
   color: #fff;
 }
+
+.team {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #151515;
+  margin: 0 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: ease-in-out 0.3s;
+  color: #484848;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .member .social a:hover {
+  color: #151515;
+  background: #ffc451;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #151515;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+
+/* MAX 370 */
+
+@media (min-width: 0px) and (max-width: 370px) {
+  #hero {
+    text-align: center;
+  }
+
+  #hero .container {
+    padding-top: 40px;
+  }
+  .header{
+    height: 100%;
+  }
+  #services h3 {
+    font-size: 18px !important;
+}
+
+
+  #hero h1 {
+    color: black!important;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-left: 0px !important;
+    width: 100%;
+    margin-bottom: 0px !important;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: black!important;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    padding-bottom: 10px;
+  }
+  #hero:before{
+  background: url("../img/hero-bg.jpg") top center no-repeat;
+  background-size: cover;
+  }
+  .btn-primary2{
+    margin-top: -5px !important; /* Añade un margen superior para separarlo */
+    margin-left: 0px;
+    font-size: 15px;
+  }
+
+  .sobreNosotros {
+    text-decoration: none;
+    font-family: "Poppins Regular", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: 2px solid #a9a8a8 !important;;
+    background-color: #096956;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-left: 80px; /* Centrar horizontalmente */
+  }
+
+  .about .content h3 {
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+    background-color: #096956;
+    padding: 15px;
+    margin-top: -10px !important;
+    width: 100%;
+  }
+  .sobreNosotros:hover{
+    background-color: #096956;
+    color: #fff
+  }
+
+  .about .content ul li {
+    padding-bottom: 10px;
+    margin-right: 80px !important;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .about .content p {
+    padding-bottom: 10px;
+    margin-right: 80px !important;
+    width: 100%;
+    -webkit-text-size-adjust: 100%
+  }
+
+  .portfolio-description-day {
+    padding: 20px;
+    border-radius: 2em 0;
+  }
+ 
+}
+
+
+/* MIN 370 MAX 700 */
+
+  @media (min-width: 370px) and (max-width: 700px)  {
+    #hero {
+      text-align: center;
+    }
+    #hero .container {
+      padding-top: 40px;
+    }
+    #hero h1 {
+      color: black !important;
+      font-weight: bold;
+      line-height: 36px;
+      margin-left: 5px !important;
+      width: 100%;
+    }
+    #hero h2 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      color: black !important;
+      font-weight: bold;
+      margin-left: 5px !important;
+      width: 100%;
+    }
+    .btn-primary2{
+      margin-top: 10px; /* Añade un margen superior para separarlo */
+      margin-left: 0px !important;
+    }
+    #hero:before{
+    background: url("../img/hero-bg.jpg") top center no-repeat;
+    background-size: cover;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+    
+    .section-title span {
+        font-size: 38px;
+      }
+
+      .portfolio-description-day {
+        padding: 20px;
+        border-radius: 2em 0;
+
+      }
+
+}
+
+/* MIN 700 MAX 900 */
+
+@media (min-width: 700px) and (max-width: 900px){
+  #hero {
+    text-align: center;
+  }
+  #hero .container {
+    padding-top: 40px;
+  }
+  #hero h1 {
+    color: #096956 !important;
+    font-size: bold;
+    line-height: 36px;
+    margin-left: 10% !important;
+    width: 100%;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    color: black !important;
+    font-weight: bold;
+    margin-left: 10% !important;
+    width: 100%;
+  }
+  .btn-primary2{
+    margin-top: 0; /* Elimina el margen superior */
+    margin-left: 20%;
+  }
+  #hero:before{
+  background: url("../img/hero-bg.jpg") top center no-repeat;
+  background-size: cover;
+  }
+
+  .sobreNosotros {
+    text-decoration: none;
+    font-family: "Poppins Regular", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: 2px solid #a9a8a8 !important;;
+    background-color: #096956;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-left: 250px !important; /* Centrar horizontalmente */
+  } 
+  
+  .about .content h3 {
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+    background-color: #096956;
+    padding: 15px;
+    margin-top: -10px !important;
+    margin-left: 20px;
+  }
+  .sobreNosotros:hover{
+    background-color: #096956;
+    color: #fff
+  }
+  
+  .about .content ul li {
+    padding-bottom: 10px;
+    margin-right: 50px !important;
+    padding: 15px;
+    margin-left: 40px;
+  }
+  
+  .about .content p {
+    padding-bottom: 10px;
+    margin-left: 30px !important;
+  }
+  
+}
+
+
+/* MIN 900 MAX 1100 */
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  #hero {
+    background-attachment: fixed;
+  }
+  #hero:before{
+    background: url("../img/hero-bg.jpg") top center no-repeat;
+    background-size: cover;
+  }
+  #hero h1 {
+    color: #096956 !important;
+    line-height: 36px;
+    margin-left: 20% !important;
+    width: 100%;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    color: black !important;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 20% !important;
+  }
+  .btn-primary2{
+    margin-top: 0; /* Elimina el margen superior */
+    margin-left: 45%;
+  }
+
+}
+
+/* MIN 1100 MAX 1200 */
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+  #hero {
+    background-attachment: fixed;
+  }
+
+  #hero:before{
+    background: url("../img/hero-bg.jpg") top center no-repeat;
+    background-size: cover;
+    }
+    #hero h2 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      color: black !important;
+      font-weight: bold;
+    }
+    #hero h1 {
+      color:#096956 !important
+    }
+  } 
+@media (min-width: 986px) and (max-width: 1300px) {
+
+
+  .portfolio-details .portfolio-details-slider img {
+    width: 65%;
+    border-radius: 0 20px 20px 20px;
+    margin-left: 15px;
+  }
+
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+    margin-left: -130px;
+  }
+  
+
+  .h2-pactado {
+    height: 120px;
+    width: auto !important;
+    padding-top: 30px;
+    padding-bottom: 40px !important;
+    margin-left: 0px !important;
+  }
+  .p-portfolio {
+    padding: 0px;
+    font-size: 22px; 
+    text-align: justify; 
+    margin-left: 10px !important; 
+    width: auto;
+  }
+
+  .p-portfolio-pactado {
+    padding: 0px;
+    font-size: 21px !important; 
+    text-align: justify; 
+    margin-left: 10px !important; 
+    width: auto !important;
+  }
+  .img-portfolio{
+    height: 250px ; 
+    width: 330px ; 
+    border-radius: 0 20px 20px 20px;
+    margin-left: 10px !important;
+    padding-bottom: -20px;
+  }
+  .portfolio-details .portfolio-description p {
+    width: 100% !important;
+  }
+
+  .quienes-somos p{
+    margin-left: -200px !important;
+  }
+  .quienes-somos strong{
+    margin-left: -190px !important;
+  }
+  .quienes-somos-titulo{
+    margin-top: 20px !important;
+  }
+
+}
+
+
+/* MIN 1200 MAX 1350 */
+
+@media (min-width: 1200px) and (max-width: 1350px)  {
+  #hero {
+    background-attachment: fixed;
+  }
+  #hero:before{
+    background: url("../img/hero-bg.jpg") top center no-repeat;
+    background-size: cover;
+    }
+    #hero h2 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      color: black !important;
+      font-weight: bold;
+    }
+    #hero h1 {
+      color:#096956 !important
+    }
+
+}
+
+/**********REVISARRRRRRRRRRRRRRRR***********/
+
+
+@media (min-width: 370px) and (max-width: 420px){
+    .sobreNosotros {
+    text-decoration: none;
+    font-family: "Poppins Regular", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: 2px solid #a9a8a8 !important;;
+    background-color: #096956;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-left: 100px; /* Centrar horizontalmente */
+    -webkit-text-size-adjust: 100%
+  } 
+
+  .about .content h3 {
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+    background-color: #096956;
+    padding: 15px;
+    margin-top: -10px !important;
+    width: 350px;
+  }
+  .sobreNosotros:hover{
+    background-color: #096956;
+    color: #fff
+  }
+
+  .about .content ul li {
+    padding-bottom: 10px;
+    margin-right: 50px !important;
+    padding: 15px;
+    width: 350px;
+  }
+  
+  .about .content p {
+    padding-bottom: 10px;
+    margin-left: 10px !important;
+    width: 330px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 500px){
+  .sobreNosotros {
+  text-decoration: none;
+  font-family: "Poppins Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 10px 28px;
+  transition: 0.5s;
+  border: 2px solid #a9a8a8 !important;;
+  background-color: #096956;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin-left: 110px; /* Centrar horizontalmente */
+} 
+
+.about .content h3 {
+  font-weight: 600;
+  font-size: 23px;
+  color: white;
+  background-color: #096956;
+  padding: 15px;
+  margin-top: -10px !important;
+  width: 350px;
+  margin-left: 13px;
+}
+.sobreNosotros:hover{
+  background-color: #096956;
+  color: #fff
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+  margin-right: 50px !important;
+  padding: 15px;
+  width: 380px;
+}
+
+.about .content p {
+  padding-bottom: 10px;
+  margin-left: 10px !important;
+  width: 360px;
+}
+}
+
+
+
+
+@media(max-width: 768px){
+  .why-us .box{
+    padding: 10px; 
+    box-shadow: 0px 0px 0px rgba(250, 250, 250, 0.1)
+  }
+  .why-us .box:hover{
+    background: #ffffff;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .clients img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 360px){
+  #services h3{
+    font-size: 15px;
+  }
+
+  .header-title {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 370px){
+  .cta p {
+    font-weight: bold;
+    font-size: 17px;
+    color: #096956;
+  }
+  .cta h3 {
+    font-weight: bold;
+    color: #096956;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: -30px;
+  }
+}
+
+
+@media (max-width: 680px) {
+
+  .imgServices-Swiper {
+    width: 100vw;
+    height: auto;
+    margin-left: 0px !important;
+  }
+  .imgServices{
+   
+    padding-left: 0px !important;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1100px) {
+
+  .imgServices-Swiper {
+    width: 100vw;
+    margin-right: 20px !important;
+    margin-left: 0px !important;
+    padding-right: 20px;
+  }
+  .imgServices{
+ 
+    padding-left: 0px !important;
+    height: 100%;
+  }
+}
+
+
+@media (max-width: 688px) {
+
+
+  .portfolio-details-slider img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor recortando si es necesario */
+    margin-left: 0;
+    margin-left: 90px !important;
+  }
+
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+    margin-left: -10px;
+  }
+
+
+  .h2-pactado {
+    height: 120px;
+    width: auto !important;
+    padding-top: 30px;
+    padding-bottom: 40px !important;
+    margin-left: 0px !important;
+  }
+  .p-portfolio {
+    padding: 0px;
+    font-size: 22px; 
+    text-align: justify; 
+    margin-left: 10px !important; 
+    width: auto;
+  }
+
+  .p-portfolio-pactado {
+    padding: 0px;
+    font-size: 21px !important; 
+    text-align: justify; 
+    margin-left: 10px !important; 
+    width: auto !important;
+  }
+  .img-portfolio{
+    height: 250px ; 
+    width: 330px ; 
+    border-radius: 0 20px 20px 20px;
+    margin-left: 10px !important;
+    padding-bottom: -20px;
+  }
+  .quienes-somos{
+    padding-top: 17px;
+    text-align:justify;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 250px !important;
+  }
+  .portfolio-details .portfolio-description p {
+    width: 100% !important;
+    padding-left: 20px;
+  }
+  .quienes-somos-titulo{
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 688px){
+  .quienes-somos-titulo{
+    margin-left: 30px;
+    margin-top: -220px;
+  }
+  .header-title{
+    font-size: 25px;
+  }
+
+  .h2-quienes-somos-titulo2{
+    margin-left: -1800px !important;
+  }
+  /* .quienes-somos p{
+    color: #060606 ;
+    font-family: sans-serif; 
+    font-size: 19px; 
+    width: 100%;
+    margin-left: -230px;
+    padding: 10px;
+   } */
+}
+
+
+
+@media (min-width: 689px) and (max-width: 986px) {
+  .quienes-somos-titulo{
+    height: 25vh !important;
+    margin-left: 50px ;
+  }
+
+  .h2-quienes-somos-titulo2{
+    margin-left: -165px !important;
+  }
+
+  .header2{
+    height: 15vh !important;
+  }
+  .breadcrumbs-quienes-somos {
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background: url(../img/hero-bg1.jpg);
+    background-position-y: 0px !important;
+  } 
+
+  .quienes-somos p{
+    color: #060606 ;
+    font-family: sans-serif; 
+    font-size: 19px; 
+    width: 100%;
+    margin-left: -250px;
+    padding: 10px;
+   }
+
+  .portfolio-details .portfolio-details-slider img {
+    width: auto;
+    border-radius: 0 20px 20px 20px;
+    margin-left: 100px;
+  }
+
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+    margin-left: -10px;
+  }
+  
+
+  .h2-pactado {
+    height: 120px;
+    width: auto !important;
+    padding-top: 30px;
+    padding-bottom: 40px !important;
+    margin-left: 0px !important;
+  }
+  .p-portfolio {
+    padding: 0px;
+    font-size: 22px; 
+    text-align: justify; 
+    margin-left: 10px !important; 
+    width: auto;
+  }
+
+  .p-portfolio-pactado {
+    padding: 0px;
+    font-size: 21px !important; 
+    text-align: justify; 
+    margin-left: 10px !important; 
+    width: auto !important;
+  }
+  .img-portfolio{
+    height: 250px ; 
+    width: 330px ; 
+    border-radius: 0 20px 20px 20px;
+    margin-left: 10px !important;
+    padding-bottom: -20px;
+  }
+  .quienes-somos{
+    padding-top: 17px;
+    text-align:justify;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 330px !important;
+  }
+  .portfolio-details .portfolio-description p {
+    width: 100% !important;
+    padding-left: 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .breadcrumbs-quienes-somos{
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background: url("../img/hero-bg1.jpg");
+    background-position: center;
+  }
+}
+
+@media (min-width: 1200px) {
+.breadcrumbs-quienes-somos {
+  padding: 15px 0;
+  background: url("../img/hero-bg1.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -280px;
+}
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-style: normal;
+  src: 
+    url('../fonts/Poppins-Black.ttf') format('truetype'),
+    url('../fonts/Poppins-BlackItalic.ttf') format('truetype'),
+
+    url('../fonts/Poppins-BoldItalic.ttf') format('truetype')
+    url('../fonts/Poppins-ExtraBold.ttf') format('truetype'),
+ 
+    url('../fonts/Poppins-Medium.ttf') format('truetype')
+ 
+    url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
+    url('../fonts/Poppins-Thin.ttf') format('truetype'),
+    url('../fonts/Quicksand-Bold.otf') format('truetype')
+    
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraLight';
+  font-weight: 200;
+  font-style: normal;
+  src: url('../fonts/Poppins-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  font-weight: 200;
+  font-style: normal;
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  font-weight: 200;
+  font-style: normal;
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype'),
+}
+
+
 
 
 

@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 const { Subscription } = require("../db");
 require('dotenv').config();
 
-const { USERMAIL, PASS, CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN } = process.env;
+const { USERMAIL, PASS } = process.env;
 
 const subscribe = async (req, res) => {
   const transporter = nodemailer.createTransport({
@@ -11,9 +11,9 @@ const subscribe = async (req, res) => {
       type: "OAuth2",
       user: USERMAIL,
       pass: PASS,
-      clientId: CLIENT_ID,
-      clientSecret: CLIENT_SECRET,
-      refreshToken: REFRESH_TOKEN
+      // clientId: CLIENT_ID,
+      // clientSecret: CLIENT_SECRET,
+      // refreshToken: REFRESH_TOKEN
     }
   });
 
